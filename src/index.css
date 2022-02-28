@@ -57,18 +57,19 @@ button, .button {
   font-family: 'Dosis', sans-serif;
 
   display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-padding: 10px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
 
-background: var(--brand-primary-color);
-color: #ffffff;
-outline: none;
-border: none;
-border-radius: 4px;
-cursor: pointer;
-min-width: 150px;
+  background: var(--brand-primary-color);
+  color: #ffffff;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  min-width: 150px;
+  /* font-size: 20px; */
 }
 
 .btnReverse {
