@@ -1,4 +1,5 @@
 import React from 'react'
+import Footer from '../components/global/Footer'
 import Header from '../components/global/Header'
 import CallToAction from '../components/home/CallToAction'
 import HomeHero from '../components/home/HomeHero'
@@ -25,7 +26,7 @@ function Home() {
 
         <CallToAction />
 
-        {/* Footer */}
+        <Footer />
     </div>
   )
 }

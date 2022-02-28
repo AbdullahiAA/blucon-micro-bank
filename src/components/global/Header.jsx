@@ -4,7 +4,7 @@ import logo from "../../images/logo.png"
 
 function Header() {
   return (
-    <div className='header'>
+    <header className='header'>
         <div className="header__icon">
             <img src={logo} alt="Blucon Microfinance Bank" />
         </div>
@@ -20,7 +20,7 @@ function Header() {
                 </ul>
             </nav>
 
-    </div>
+    </header>
   )
 }
 
