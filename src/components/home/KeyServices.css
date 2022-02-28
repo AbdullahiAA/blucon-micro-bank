@@ -1,0 +1,25 @@
+.keyServices {
+    padding-top: 80px !important;
+}
+
+.keyServices__header {
+    text-align: center;
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+
+.keyServices__list {
+    margin: 95px 0px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 80px;
+    row-gap: 60px;
+}
+
+.keyServices__listTitle {
+    margin-bottom: 8px;
+}

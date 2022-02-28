@@ -1,0 +1,30 @@
+.homeHero {
+    height: 80vh;
+    background: linear-gradient(0deg, rgba(27, 46, 84, 0.24), rgba(27, 46, 84, 0.24));
+    background-image: url(../../images/homeHero.png);
+}
+
+.homeHero__content {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    justify-content: center;
+}
+
+.homeHero__content h1 span {
+    color: var(--brand-sec-color);
+}
+
+.homeHero__content p {
+    color: #ffffff;
+    
+    
+}
+
+.homeHero__callToAction {
+    display: flex;
+    gap: 24px;
+    margin-top: 16px;
+}
