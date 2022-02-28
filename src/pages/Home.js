@@ -2,6 +2,7 @@ import React from 'react'
 import Header from '../components/global/Header'
 import HomeHero from '../components/home/HomeHero'
 import KeyServices from '../components/home/KeyServices'
+import OurHistory from '../components/home/OurHistory'
 import "./Home.css"
 
 function Home() {
@@ -13,7 +14,7 @@ function Home() {
 
         <KeyServices />
 
-        {/* History */}
+        <OurHistory />
 
         {/* Customer */}
 

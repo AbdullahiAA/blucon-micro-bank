@@ -1,0 +1,27 @@
+.ourHistory {
+    padding: 0px !important;
+    display: flex;
+    background-color: var(--brand-primary-color);
+}
+
+.ourHistory__img img {
+    /* width: 100%; */
+}
+
+.ourHistory__content {
+    padding: 100px 70px;
+}
+
+.ourHistory__content h2, .ourHistory__content p {
+    color: #ffffff;
+}
+
+.ourHistory__content h2 {
+    margin-bottom: 16px;
+}
+
+.ourHistory__content p {
+    margin-bottom: 32px;
+    max-width: 80%;
+    
+}
