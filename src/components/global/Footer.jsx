@@ -1,6 +1,13 @@
 import React from 'react'
 import "./Footer.css"
 import logoWhite from "../../images/logoWhite.png"
+// import InstagramIcon from '@mui/icons-material/Instagram';
+// import YouTubeIcon from '@mui/icons-material/YouTube';
+// import LinkedInIcon from '@mui/icons-material/LinkedIn';
+// import FacebookIcon from '@mui/icons-material/Facebook';
+
+// npm install @mui/icons-material
+
 
 
 function Footer() {

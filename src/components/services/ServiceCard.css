@@ -1,0 +1,39 @@
+.serviceCard {
+  display: flex;
+  gap: 100px;
+  align-items: center;
+  padding: 20px 95px;
+}
+
+.serviceCard > * {
+  flex: 1;
+}
+
+.serviceCard.imgFirst {
+  flex-direction: row-reverse;
+}
+
+.serviceCard.fullCard {
+  margin: 20px 0px;
+  padding: 0px;
+  gap: 0px;
+  background-color: var(--brand-primary-color);
+}
+
+.serviceCard.fullCard * {
+  color: #ffffff;
+}
+
+.serviceCard.fullCard .serviceCard__content {
+  padding-left: 95px;
+  padding-right: 95px;
+}
+
+.serviceCard__content h2 {
+  margin-bottom: 24px;
+}
+
+.serviceCard__img img {
+  width: 100%;
+  height: 100% !important;
+}
