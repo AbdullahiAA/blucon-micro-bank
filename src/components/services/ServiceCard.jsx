@@ -4,6 +4,8 @@ import "./ServiceCard.css";
 function ServiceCard({
   title,
   content,
+  secTitle,
+  secContent,
   imgURL,
   showImgFirst = false,
   showFullCard = false,
@@ -18,6 +20,14 @@ function ServiceCard({
         <h2>{title}</h2>
 
         <p>{content}</p>
+
+        {secTitle && secContent && (
+          <div className="serviceCard__secContent">
+            <h2>{secTitle}</h2>
+
+            <p>{secContent}</p>
+          </div>
+        )}
       </div>
 
       <div className="serviceCard__img">

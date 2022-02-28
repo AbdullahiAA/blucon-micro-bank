@@ -1,0 +1,46 @@
+.coreValue {
+  padding: 120px 95px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 20px;
+  column-gap: 20px;
+}
+
+.coreValue__content {
+  padding: 45px 0px;
+}
+
+.coreValue__content h2 {
+  margin-bottom: 16px;
+}
+
+.coreValue__content p {
+  margin-bottom: 32px;
+}
+
+.coreValue__list ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.coreValue__list ul li {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.coreValue__list ul li span {
+  font-weight: 500;
+}
+
+.coreValue__listCheck > img {
+  width: 25px;
+}
+
+.coreValue__imgMiddle {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}

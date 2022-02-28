@@ -33,6 +33,10 @@
   margin-bottom: 24px;
 }
 
+.serviceCard__secContent {
+  margin-top: 60px;
+}
+
 .serviceCard__img img {
   width: 100%;
   height: 100% !important;

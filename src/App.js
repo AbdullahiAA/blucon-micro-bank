@@ -1,13 +1,16 @@
-import './App.css';
-import Home from './pages/Home';
-import Services from './pages/Services';
+import "./App.css";
+import About from "./pages/About";
+import Home from "./pages/Home";
+import Services from "./pages/Services";
 
 function App() {
   return (
     <div className="app">
-      {/* <Home /> */}
+      <Home />
 
-      <Services />
+      {/* <Services /> */}
+
+      <About />
     </div>
   );
 }
