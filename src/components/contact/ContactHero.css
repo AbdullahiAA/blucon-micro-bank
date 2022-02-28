@@ -1,0 +1,45 @@
+.contactHero {
+  padding: 95px 95px 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.contactHero__header {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  text-align: center;
+  width: 75%;
+}
+
+.contactHero__body {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+}
+
+ul.contactHero__list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+ul.contactHero__list li {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+ul.contactHero__list li span,
+ul.contactHero__list li a {
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.contactHero__listCheck > img {
+  width: 25px;
+}

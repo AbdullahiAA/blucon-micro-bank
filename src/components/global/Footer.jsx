@@ -1,10 +1,10 @@
 import React from "react";
 import "./Footer.css";
 import logoWhite from "../../images/logoWhite.png";
-// import InstagramIcon from '@mui/icons-material/Instagram';
-// import YouTubeIcon from '@mui/icons-material/YouTube';
-// import LinkedInIcon from '@mui/icons-material/LinkedIn';
-// import FacebookIcon from '@mui/icons-material/Facebook';
+import InstagramIcon from "@mui/icons-material/Instagram";
+import YouTubeIcon from "@mui/icons-material/YouTube";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import FacebookIcon from "@mui/icons-material/Facebook";
 
 function Footer() {
   return (
@@ -14,9 +14,13 @@ function Footer() {
 
         <p>2118 Thornridge Cir. Syracuse, Connecticut 35624 - Lagos, Nigeria</p>
 
-        <p>Support@bluconmfb.com</p>
+        <p>
+          <a href="mailto:support@bluconmfb.com">Support@bluconmfb.com</a>
+        </p>
 
-        <p>+234-803-761-435</p>
+        <p>
+          <a href="tel:234803761435">+234-803-761-435</a>
+        </p>
       </div>
 
       <div className="footer__services">
@@ -72,6 +76,21 @@ function Footer() {
           </li>
           <li>
             <a href="#">Dowload Our App</a>
+          </li>
+
+          <li className="footer__socials">
+            <a href="#">
+              <InstagramIcon />
+            </a>
+            <a href="#">
+              <YouTubeIcon />
+            </a>
+            <a href="#">
+              <LinkedInIcon />
+            </a>
+            <a href="#">
+              <FacebookIcon />
+            </a>
           </li>
         </ul>
       </div>
