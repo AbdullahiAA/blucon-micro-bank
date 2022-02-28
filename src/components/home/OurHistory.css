@@ -4,6 +4,10 @@
     background-color: var(--brand-primary-color);
 }
 
+.ourHistory__img img {
+    height: 100%;
+}
+
 .ourHistory__content {
     padding: 100px 70px;
 }

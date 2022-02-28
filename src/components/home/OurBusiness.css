@@ -1,0 +1,50 @@
+.ourBusiness {
+    padding: 0px !important;
+    display: flex;
+    background-color: var(--brand-primary-color);
+}
+
+.ourBusiness__img img {
+    height: 100%;
+    /* width: 100%; */
+}
+
+.ourBusiness__content {
+    padding: 100px 70px;
+}
+
+.ourBusiness__content h2, .ourBusiness__content p {
+    color: #ffffff;
+}
+
+.ourBusiness__content h2 {
+    margin-bottom: 16px;
+}
+
+.ourBusiness__content p {
+    margin-bottom: 50px;
+    
+}
+
+
+.ourBusiness__list ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.ourBusiness__list ul li {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.ourBusiness__list ul li span {
+    font-weight: 500;
+    color: #ffffff;
+}
+
+.ourBusiness__listCheck > img {
+    width: 25px;
+}
