@@ -1,0 +1,27 @@
+.serviceHero {
+    padding: 60px 95px 95px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(0deg, rgba(27, 46, 84, 0.24), rgba(27, 46, 84, 0.24));
+    background-image: url(../../images/serviceHero.png);
+}
+
+.serviceHero__content {
+    height: 100%;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+}
+
+.serviceHero__content h2, .serviceHero__content p {
+    color: #ffffff;
+}
+
+.serviceHero__content p {
+    margin-bottom: 30px;
+}
