@@ -1,0 +1,24 @@
+.accountType {
+  padding: 35px 95px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 85px;
+  column-gap: 24px;
+}
+
+.accountType__item {
+  text-align: center;
+}
+
+.accountType__item h5 {
+  margin-bottom: 8px;
+}
+
+.accountType__item p {
+  margin-bottom: 24px;
+  /* text-align: initial; */
+}
+
+.accountType__item button {
+  margin: auto;
+}

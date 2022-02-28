@@ -2,6 +2,7 @@ import "./App.css";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Home from "./pages/Home";
+import OpenAccount from "./pages/OpenAccount";
 import Services from "./pages/Services";
 
 function App() {
@@ -13,7 +14,9 @@ function App() {
 
       {/* <About /> */}
 
-      <Contact />
+      {/* <Contact /> */}
+
+      <OpenAccount />
     </div>
   );
 }

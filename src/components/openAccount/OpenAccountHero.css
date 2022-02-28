@@ -1,0 +1,14 @@
+.openAccountHero {
+  padding: 95px 95px 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.openAccountHero__content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  text-align: center;
+  width: 75%;
+}
