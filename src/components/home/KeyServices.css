@@ -1,5 +1,6 @@
 .keyServices {
     padding-top: 80px !important;
+    padding-bottom: 180px !important;
 }
 
 .keyServices__header {
@@ -20,6 +21,23 @@
     row-gap: 60px;
 }
 
+.keyServices__listIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: linear-gradient(180deg, #1B2E54 48.44%, rgba(27, 46, 84, 0.57) 100%);
+}
+
 .keyServices__listTitle {
     margin-bottom: 8px;
+}
+
+.keyServices__exploreBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
