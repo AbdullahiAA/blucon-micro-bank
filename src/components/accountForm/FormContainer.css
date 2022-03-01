@@ -18,7 +18,7 @@
   color: #808080;
 }
 
-.formContainer__body {
+.formContainer__body form {
   display: flex;
   flex-direction: column;
   gap: 25px;
@@ -34,6 +34,11 @@
 
 .formBtns a {
   text-decoration: none;
+}
+
+.row-1 {
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
 .row-2 {

@@ -7,6 +7,7 @@ const routeParams = {
 
   bankInfo: "/account/new/bank-details",
   personalInfo: "/account/new/personal-details",
+  employerInfo: "/account/new/employer-details",
 };
 
 export default routeParams;
