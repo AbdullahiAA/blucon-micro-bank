@@ -1,0 +1,14 @@
+.otherInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.checkArea {
+  display: flex;
+  gap: 16px;
+}
+
+.checkArea label {
+  cursor: pointer;
+  color: #666666;
+}

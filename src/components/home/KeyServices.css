@@ -1,43 +1,52 @@
 .keyServices {
-    padding-top: 80px !important;
-    padding-bottom: 180px !important;
+  padding-top: 80px !important;
+  padding-bottom: 130px !important;
+  background-image: url(../../images/illustrations/keyService.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-origin: padding-box;
+  height: fit-content;
 }
 
 .keyServices__header {
-    text-align: center;
-    width: 70%;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
+  text-align: center;
+  width: 70%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
-
 .keyServices__list {
-    margin: 95px 0px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 80px;
-    row-gap: 60px;
+  margin: 95px 0px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 80px;
+  row-gap: 60px;
 }
 
 .keyServices__listIcon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 20px;
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    background: linear-gradient(180deg, #1B2E54 48.44%, rgba(27, 46, 84, 0.57) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: linear-gradient(
+    180deg,
+    #1b2e54 48.44%,
+    rgba(27, 46, 84, 0.57) 100%
+  );
 }
 
 .keyServices__listTitle {
-    margin-bottom: 8px;
+  margin-bottom: 8px;
 }
 
 .keyServices__exploreBtn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

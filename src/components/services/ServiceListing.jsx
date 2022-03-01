@@ -22,6 +22,7 @@ function ServiceListing() {
           neque, diam risus, nibh amet. Quam sagittis lacinia eget urna nisl. Ut
           nulla orci vel egestas vestibulum cursus massa id."
         imgURL={serviceThriftImg}
+        showBgIllustration
       />
 
       <ServiceCard

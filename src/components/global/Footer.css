@@ -5,6 +5,13 @@
   gap: 130px;
   padding: 60px 95px;
   background-color: var(--brand-primary-color);
+
+  background-image: url(../../images/illustrations/footer.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-origin: padding-box;
+  height: fit-content;
 }
 
 .footer * {

@@ -9,6 +9,12 @@
   flex: 1;
 }
 
+.serviceCard.bgIllustration {
+  background-image: url(../../images/illustrations/service.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .serviceCard.imgFirst {
   flex-direction: row-reverse;
 }

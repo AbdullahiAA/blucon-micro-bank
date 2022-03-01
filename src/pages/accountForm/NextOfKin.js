@@ -66,7 +66,7 @@ function NextOfKin() {
             </Link>
 
             <Link to={routeParams.otherInfo}>
-              <button>Complete</button>
+              <button>Continue</button>
             </Link>
           </div>
         </form>

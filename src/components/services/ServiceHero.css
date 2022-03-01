@@ -10,6 +10,7 @@
   );
   background-image: url(../../images/serviceHero.png);
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .serviceHero__content {

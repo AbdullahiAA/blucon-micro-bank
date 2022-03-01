@@ -1,10 +1,12 @@
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import "./App.css";
+import ScrollToTop from "./components/global/ScrollToTop";
 
 import About from "./pages/About";
 import BankAccount from "./pages/accountForm/BankAccount";
 import EmployerInfo from "./pages/accountForm/EmployerInfo";
 import NextOfKin from "./pages/accountForm/NextOfKin";
+import OtherInfo from "./pages/accountForm/OtherInfo";
 import PersonalInfo from "./pages/accountForm/PersonalInfo";
 import Contact from "./pages/Contact";
 import Home from "./pages/Home";
@@ -16,6 +18,8 @@ function App() {
   return (
     <div className="app">
       <BrowserRouter>
+        <ScrollToTop />
+
         <Routes>
           <Route path={routeParams.homePage} element={<Home />} />
           <Route path={routeParams.servicePage} element={<Services />} />
@@ -26,6 +30,7 @@ function App() {
           <Route path={routeParams.personalInfo} element={<PersonalInfo />} />
           <Route path={routeParams.employerInfo} element={<EmployerInfo />} />
           <Route path={routeParams.nextOfKin} element={<NextOfKin />} />
+          <Route path={routeParams.otherInfo} element={<OtherInfo />} />
 
           <Route path="*" element={<Navigate to={routeParams.homePage} />} />
         </Routes>
