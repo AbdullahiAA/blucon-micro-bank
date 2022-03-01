@@ -9,6 +9,7 @@ const routeParams = {
   personalInfo: "/account/new/personal-details",
   employerInfo: "/account/new/employer-details",
   nextOfKin: "/account/new/next-of-kin",
+  otherInfo: "/account/new/other-info",
 };
 
 export default routeParams;
