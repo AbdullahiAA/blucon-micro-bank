@@ -1,29 +1,34 @@
 import React from "react";
 import "./Header.css";
 import logo from "../../images/logo.png";
+import { Link, NavLink } from "react-router-dom";
 
 function Header() {
   return (
     <header className="header">
       <div className="header__icon">
-        <img src={logo} alt="Blucon Microfinance Bank" />
+        <Link to="/">
+          <img src={logo} alt="Blucon Microfinance Bank" />
+        </Link>
       </div>
 
       <nav className="header__nav">
         <ul>
           <li>
-            <a href="#">Home</a>
+            <NavLink to="/">Home</NavLink>
           </li>
           <li>
-            <a href="#">Service</a>
+            <NavLink to="/services">Service</NavLink>
           </li>
           <li>
-            <a href="#">About</a>
+            <NavLink to="/about">About</NavLink>
           </li>
           <li>
-            <a href="#">Contact</a>
+            <NavLink to="/contact">Contact</NavLink>
           </li>
-          <button>Open Free Account</button>
+          <NavLink to="/account">
+            <button>Open Free Account</button>
+          </NavLink>
         </ul>
       </nav>
     </header>
