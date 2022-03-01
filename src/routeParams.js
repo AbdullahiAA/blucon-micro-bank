@@ -8,6 +8,7 @@ const routeParams = {
   bankInfo: "/account/new/bank-details",
   personalInfo: "/account/new/personal-details",
   employerInfo: "/account/new/employer-details",
+  nextOfKin: "/account/new/next-of-kin",
 };
 
 export default routeParams;

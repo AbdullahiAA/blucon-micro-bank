@@ -3,6 +3,7 @@ import "./App.css";
 
 import About from "./pages/About";
 import BankAccount from "./pages/accountForm/BankAccount";
+import EmployerInfo from "./pages/accountForm/EmployerInfo";
 import PersonalInfo from "./pages/accountForm/PersonalInfo";
 import Contact from "./pages/Contact";
 import Home from "./pages/Home";
@@ -22,6 +23,7 @@ function App() {
           <Route path={routeParams.newAccount} element={<OpenAccount />} />
           <Route path={routeParams.bankInfo} element={<BankAccount />} />
           <Route path={routeParams.personalInfo} element={<PersonalInfo />} />
+          <Route path={routeParams.employerInfo} element={<EmployerInfo />} />
 
           <Route path="*" element={<Navigate to={routeParams.homePage} />} />
         </Routes>
