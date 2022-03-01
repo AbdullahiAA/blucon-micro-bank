@@ -1,37 +1,33 @@
-
 :root {
-  --bg-color: #F9FAFB;
-  --brand-primary-color: #1B2E54;
-  --brand-sec-color: #BF2626;
+  --bg-color: #f9fafb;
+  --bg-account-color: #fafafa;
+  --brand-primary-color: #1b2e54;
+  --brand-sec-color: #bf2626;
 }
-
 
 *,
 *::after,
 *::before {
-   margin: 0;
-   padding: 0;
-   box-sizing: border-box;
-   font-family: 'Dosis', sans-serif;
-   scroll-behavior: smooth;
-   color: var(--brand-primary-color);
-   letter-spacing: 0.015em;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Dosis", sans-serif;
+  scroll-behavior: smooth;
+  color: var(--brand-primary-color);
+  letter-spacing: 0.015em;
 }
-
-
 
 body {
   margin: 0;
-  font-family: 'Dosis', sans-serif;
+  font-family: "Dosis", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 400;
   background-color: var(--bg-color);
-   color: var(--brand-primary-color);
-   font-size: 16px;
-   overflow-x: hidden;
+  color: var(--brand-primary-color);
+  font-size: 16px;
+  overflow-x: hidden;
 }
-
 
 h1 {
   font-size: 40px;
@@ -41,6 +37,12 @@ h1 {
 h2 {
   font-size: 36px;
   line-height: 52px;
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 35px;
 }
 
 h5 {
@@ -54,8 +56,9 @@ p {
   line-height: 30px;
 }
 
-button, .button {
-  font-family: 'Dosis', sans-serif;
+button,
+.button {
+  font-family: "Dosis", sans-serif;
 
   display: flex;
   flex-direction: row;
@@ -70,10 +73,11 @@ button, .button {
   border-radius: 4px;
   cursor: pointer;
   min-width: 150px;
+  text-decoration: none;
   /* font-size: 20px; */
 }
 
 .btnReverse {
-  background-color: #D1D5DD;
+  background-color: #d1d5dd;
   color: var(--brand-primary-color);
 }

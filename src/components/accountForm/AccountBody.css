@@ -1,0 +1,8 @@
+.accountBody {
+  background-color: var(--bg-account-color);
+  flex: 1;
+  padding: 65px 100px;
+  padding-bottom: 0px;
+  display: flex;
+  gap: 60px;
+}

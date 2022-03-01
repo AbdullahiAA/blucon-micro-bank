@@ -2,22 +2,25 @@ import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import "./App.css";
 
 import About from "./pages/About";
+import BankAccount from "./pages/accountForm/BankAccount";
 import Contact from "./pages/Contact";
 import Home from "./pages/Home";
 import OpenAccount from "./pages/OpenAccount";
 import Services from "./pages/Services";
+import routeParams from "./routeParams";
 
 function App() {
   return (
     <div className="app">
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/services" element={<Services />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/account" element={<OpenAccount />} />
-          <Route path="*" element={<Navigate to="/" />} />
+          <Route path={routeParams.homePage} element={<Home />} />
+          <Route path={routeParams.servicePage} element={<Services />} />
+          <Route path={routeParams.aboutPage} element={<About />} />
+          <Route path={routeParams.contactPage} element={<Contact />} />
+          <Route path={routeParams.newAccount} element={<OpenAccount />} />
+          <Route path={routeParams.bankInfo} element={<BankAccount />} />
+          <Route path="*" element={<Navigate to={routeParams.homePage} />} />
         </Routes>
       </BrowserRouter>
     </div>

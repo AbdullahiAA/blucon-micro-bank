@@ -19,6 +19,10 @@
   /* text-align: initial; */
 }
 
+.accountType__item a {
+  text-decoration: none;
+}
+
 .accountType__item button {
   margin: auto;
 }

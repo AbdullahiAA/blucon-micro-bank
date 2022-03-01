@@ -1,0 +1,24 @@
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.formLabel {
+  font-weight: 500;
+  /* font-size: 20px; */
+  line-height: 25px;
+  width: fit-content;
+  cursor: pointer;
+}
+
+input {
+  background: #ffffff;
+  border: 1.5px solid #cccccc;
+  border-radius: 4px;
+  padding: 16px;
+  outline: none;
+  font-family: "Dosis", sans-serif;
+  /* font-size: 18px; */
+}
