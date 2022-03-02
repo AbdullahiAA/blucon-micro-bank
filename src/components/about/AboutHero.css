@@ -3,6 +3,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  background-image: url(../../images/illustrations/about.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .aboutHero__content {

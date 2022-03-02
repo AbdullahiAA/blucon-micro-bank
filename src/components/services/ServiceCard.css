@@ -3,6 +3,7 @@
   gap: 100px;
   align-items: center;
   padding: 20px 95px;
+  margin-bottom: 100px;
 }
 
 .serviceCard > * {
@@ -10,9 +11,11 @@
 }
 
 .serviceCard.bgIllustration {
+  padding-top: 120px;
   background-image: url(../../images/illustrations/service.svg);
   background-repeat: no-repeat;
   background-size: cover;
+  margin-bottom: 0px;
 }
 
 .serviceCard.imgFirst {
@@ -20,7 +23,7 @@
 }
 
 .serviceCard.fullCard {
-  margin: 20px 0px;
+  margin: 20px 0px 120px;
   padding: 0px;
   gap: 0px;
   background-color: var(--brand-primary-color);
@@ -33,6 +36,10 @@
 .serviceCard.fullCard .serviceCard__content {
   padding-left: 95px;
   padding-right: 95px;
+}
+
+.serviceCard:last-of-type {
+  margin-bottom: 0px;
 }
 
 .serviceCard__content h2 {

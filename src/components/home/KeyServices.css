@@ -39,6 +39,7 @@
     #1b2e54 48.44%,
     rgba(27, 46, 84, 0.57) 100%
   );
+  filter: drop-shadow(0px 12px 20px rgba(27, 46, 84, 0.12));
 }
 
 .keyServices__listTitle {
