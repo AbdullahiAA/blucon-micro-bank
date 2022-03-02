@@ -27,9 +27,9 @@ function Header() {
           <li>
             <NavLink to={routeParams.contactPage}>Contact</NavLink>
           </li>
-          <NavLink to={routeParams.newAccount}>
+          <Link to={routeParams.newAccount}>
             <button>Open Free Account</button>
-          </NavLink>
+          </Link>
         </ul>
       </nav>
     </header>

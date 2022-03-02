@@ -8,6 +8,10 @@
   gap: 16px;
 }
 
+.checkArea input {
+  margin-top: 4px;
+}
+
 .checkArea label {
   cursor: pointer;
   color: #666666;

@@ -5,6 +5,8 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import YouTubeIcon from "@mui/icons-material/YouTube";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import FacebookIcon from "@mui/icons-material/Facebook";
+import routeParams from "../../routeParams";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -27,22 +29,22 @@ function Footer() {
         <h5>Services</h5>
         <ul>
           <li>
-            <a href="#">Daily Thrift Contribution</a>
+            <Link to="#">Daily Thrift Contribution</Link>
           </li>
           <li>
-            <a href="#">Bank Account</a>
+            <Link to="#">Bank Account</Link>
           </li>
           <li>
-            <a href="#">Credit Facilities</a>
+            <Link to="#">Credit Facilities</Link>
           </li>
           <li>
-            <a href="#">Equipment Microleasing</a>
+            <Link to="#">Equipment Microleasing</Link>
           </li>
           <li>
-            <a href="#">Farm Input Loan</a>
+            <Link to="#">Farm Input Loan</Link>
           </li>
           <li>
-            <a href="#">Tricycle Finance</a>
+            <Link to="#">Tricycle Finance</Link>
           </li>
         </ul>
       </div>
@@ -51,16 +53,16 @@ function Footer() {
         <h5>Information</h5>
         <ul>
           <li>
-            <a href="#">Terms of Service</a>
+            <Link to="#">Terms of Service</Link>
           </li>
           <li>
-            <a href="#">Privacy Policy</a>
+            <Link to="#">Privacy Policy</Link>
           </li>
           <li>
-            <a href="#">Customer Support</a>
+            <Link to="#">Customer Support</Link>
           </li>
           <li>
-            <a href="#">FAQs</a>
+            <Link to="#">FAQs</Link>
           </li>
         </ul>
       </div>
@@ -69,26 +71,26 @@ function Footer() {
         <h5>Quick Links</h5>
         <ul>
           <li>
-            <a href="#">About Us</a>
+            <Link to={routeParams.aboutPage}>About Us</Link>
           </li>
           <li>
-            <a href="#">Careers</a>
+            <Link to="#">Careers</Link>
           </li>
           <li>
-            <a href="#">Dowload Our App</a>
+            <Link to="#">Dowload Our App</Link>
           </li>
 
           <li className="footer__socials">
-            <a href="#">
+            <a href="https://www.instagram.com">
               <InstagramIcon />
             </a>
-            <a href="#">
+            <a href="https://www.youtube.com">
               <YouTubeIcon />
             </a>
-            <a href="#">
+            <a href="https://www.linkedin.com">
               <LinkedInIcon />
             </a>
-            <a href="#">
+            <a href="https://www.facebook.com">
               <FacebookIcon />
             </a>
           </li>
