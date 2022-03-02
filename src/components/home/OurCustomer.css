@@ -27,18 +27,43 @@
 .ourCustomer__images {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  column-gap: 100px;
+  column-gap: 80px;
   row-gap: 50px;
   align-items: center;
 }
 
+.ourCustomer__images > div {
+  position: relative;
+}
+
 .ourCustomer__imageOne {
-  grid-row: 1/ 3;
+  grid-row: 1 / 3;
 }
 
 .ourCustomer__imageTwo,
 .ourCustomer__imageThree {
   grid-column: 2/3;
+}
+
+.ourCustomer__imageOne:after {
+  content: url(../../images/tooltip1.png);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 100%;
+}
+.ourCustomer__imageTwo:after {
+  content: url(../../images/tooltip2.png);
+  position: absolute;
+  left: 50%;
+  top: 5%;
+}
+.ourCustomer__imageThree:after {
+  content: url(../../images/tooltip3.png);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .ourCustomer__list ul {
