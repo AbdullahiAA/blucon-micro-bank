@@ -13,7 +13,6 @@
   box-sizing: border-box;
   font-family: "Dosis", sans-serif;
   scroll-behavior: smooth;
-  color: var(--brand-primary-color);
   letter-spacing: 0.015em;
 }
 
