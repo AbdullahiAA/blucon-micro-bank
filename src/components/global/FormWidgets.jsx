@@ -7,7 +7,7 @@ function FormGroup({ children }) {
 
 function FormLabel({ title, htmlFor }) {
   return (
-    <label className="formLabel" for={htmlFor}>
+    <label className="formLabel" htmlFor={htmlFor}>
       {title}
     </label>
   );
