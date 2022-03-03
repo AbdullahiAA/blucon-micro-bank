@@ -11,6 +11,7 @@
   background-image: url(../../images/serviceHero.png);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 .serviceHero__content {
@@ -31,4 +32,14 @@
 
 .serviceHero__content p {
   margin-bottom: 30px;
+}
+
+@media screen and (max-width: 900px) {
+  .serviceHero {
+    padding: 60px 55px 75px;
+  }
+
+  .serviceHero__content {
+    width: 90%;
+  }
 }
