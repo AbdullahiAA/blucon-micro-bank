@@ -15,7 +15,7 @@ const steps = [
   { label: "Other Information", page: routeParams.otherInfo },
 ];
 
-function ProgressBar({}) {
+function ProgressBar() {
   const { pathname } = useLocation();
 
   function getActiveStep() {
