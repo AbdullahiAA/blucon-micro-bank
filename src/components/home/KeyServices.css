@@ -42,6 +42,11 @@
   filter: drop-shadow(0px 12px 20px rgba(27, 46, 84, 0.12));
 }
 
+.keyServices__listIcon img {
+  max-width: 50%;
+  max-height: 50%;
+}
+
 .keyServices__listTitle {
   margin-bottom: 8px;
 }
@@ -50,4 +55,32 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@media screen and (max-width: 900px) {
+  .keyServices {
+    padding-top: 50px !important;
+    padding-bottom: 100px !important;
+  }
+  .keyServices__header {
+    width: 90%;
+    gap: 0px;
+  }
+
+  .keyServices__list {
+    margin: 55px 0px;
+    column-gap: 40px;
+    row-gap: 40px;
+  }
+
+  .keyServices__listIcon {
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    margin-bottom: 15px;
+  }
+
+  .keyServices__listItem {
+    text-align: center;
+  }
 }

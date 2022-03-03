@@ -62,7 +62,7 @@
 
 @media screen and (max-width: 900px) {
   .header {
-    padding: 35px 55px;
+    padding: 20px 55px;
   }
 
   .header__icon {
@@ -70,7 +70,7 @@
   }
 
   .header__nav ul {
-    gap: 35px;
+    gap: 40px;
   }
 
   .header__btn {

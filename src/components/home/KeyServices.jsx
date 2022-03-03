@@ -9,6 +9,51 @@ import financeIcon from "../../images/icons/finance.svg";
 import routeParams from "../../routeParams";
 import { Link } from "react-router-dom";
 
+const keyServices = [
+  {
+    id: 1,
+    icon: contrIcon,
+    title: "Daily Thrift Contribution",
+    content:
+      "Lorem ipsum dolor sit amet, consectetur adipis cing elit. Nibh nisi vel nullam lacus, velit. Mattis massa odio nisl gravida in phasellus consectetur tortor, nisl.",
+  },
+  {
+    id: 2,
+    icon: bankIcon,
+    title: "Bank Account",
+    content:
+      "Lorem ipsum dolor sit amet, consectetur adipis cing elit. Nibh nisi vel nullam lacus, velit. Mattis massa odio nisl gravida in phasellus consectetur tortor, nisl.",
+  },
+  {
+    id: 3,
+    icon: creditIcon,
+    title: "Credit Facilities",
+    content:
+      "Lorem ipsum dolor sit amet, consectetur adipis cing elit. Nibh nisi vel nullam lacus, velit. Mattis massa odio nisl gravida in phasellus consectetur tortor, nisl.",
+  },
+  {
+    id: 4,
+    icon: epuipIcon,
+    title: "Equipment Microleasing",
+    content:
+      "Lorem ipsum dolor sit amet, consectetur adipis cing elit. Nibh nisi vel nullam lacus, velit. Mattis massa odio nisl gravida in phasellus consectetur tortor, nisl.",
+  },
+  {
+    id: 5,
+    icon: farmIcon,
+    title: "Farm Input Loan",
+    content:
+      "Lorem ipsum dolor sit amet, consectetur adipis cing elit. Nibh nisi vel nullam lacus, velit. Mattis massa odio nisl gravida in phasellus consectetur tortor, nisl.",
+  },
+  {
+    id: 6,
+    icon: financeIcon,
+    title: "Tricycle Finance",
+    content:
+      "Lorem ipsum dolor sit amet, consectetur adipis cing elit. Nibh nisi vel nullam lacus, velit. Mattis massa odio nisl gravida in phasellus consectetur tortor, nisl.",
+  },
+];
+
 function KeyServices() {
   return (
     <section className="keyServices">
@@ -21,72 +66,15 @@ function KeyServices() {
       </div>
 
       <div className="keyServices__list">
-        <div className="keyServices__listItem">
-          <div className="keyServices__listIcon">
-            <img src={contrIcon} alt="Daily Thrift Contribution" />
+        {keyServices.map(({ id, icon, title, content }) => (
+          <div key={id} className="keyServices__listItem">
+            <div className="keyServices__listIcon">
+              <img src={icon} alt={title} />
+            </div>
+            <h5 className="keyServices__listTitle">{title}</h5>
+            <p className="keyServices__listContent">{content}</p>
           </div>
-          <h5 className="keyServices__listTitle">Daily Thrift Contribution</h5>
-          <p className="keyServices__listContent">
-            Lorem ipsum dolor sit amet, consectetur adipis cing elit. Nibh nisi
-            vel nullam lacus, velit. Mattis massa odio nisl gravida in phasellus
-            consectetur tortor, nisl.
-          </p>
-        </div>
-        <div className="keyServices__listItem">
-          <div className="keyServices__listIcon">
-            <img src={bankIcon} alt="Bank Account" />
-          </div>
-          <h5 className="keyServices__listTitle">Bank Account</h5>
-          <p className="keyServices__listContent">
-            Lorem ipsum dolor sit amet, consectetur adipis cing elit. Nibh nisi
-            vel nullam lacus, velit. Mattis massa odio nisl gravida in phasellus
-            consectetur tortor, nisl.
-          </p>
-        </div>
-        <div className="keyServices__listItem">
-          <div className="keyServices__listIcon">
-            <img src={creditIcon} alt="Credit Facilities" />
-          </div>
-          <h5 className="keyServices__listTitle">Credit Facilities</h5>
-          <p className="keyServices__listContent">
-            Lorem ipsum dolor sit amet, consectetur adipis cing elit. Nibh nisi
-            vel nullam lacus, velit. Mattis massa odio nisl gravida in phasellus
-            consectetur tortor, nisl.
-          </p>
-        </div>
-        <div className="keyServices__listItem">
-          <div className="keyServices__listIcon">
-            <img src={epuipIcon} alt="Equipment Microleasing" />
-          </div>
-          <h5 className="keyServices__listTitle">Equipment Microleasing</h5>
-          <p className="keyServices__listContent">
-            Lorem ipsum dolor sit amet, consectetur adipis cing elit. Nibh nisi
-            vel nullam lacus, velit. Mattis massa odio nisl gravida in phasellus
-            consectetur tortor, nisl.
-          </p>
-        </div>
-        <div className="keyServices__listItem">
-          <div className="keyServices__listIcon">
-            <img src={farmIcon} alt="Farm Input Loan" />
-          </div>
-          <h5 className="keyServices__listTitle">Farm Input Loan</h5>
-          <p className="keyServices__listContent">
-            Lorem ipsum dolor sit amet, consectetur adipis cing elit. Nibh nisi
-            vel nullam lacus, velit. Mattis massa odio nisl gravida in phasellus
-            consectetur tortor, nisl.
-          </p>
-        </div>
-        <div className="keyServices__listItem">
-          <div className="keyServices__listIcon">
-            <img src={financeIcon} alt="Tricycle Finance" />
-          </div>
-          <h5 className="keyServices__listTitle">Tricycle Finance</h5>
-          <p className="keyServices__listContent">
-            Lorem ipsum dolor sit amet, consectetur adipis cing elit. Nibh nisi
-            vel nullam lacus, velit. Mattis massa odio nisl gravida in phasellus
-            consectetur tortor, nisl.
-          </p>
-        </div>
+        ))}
       </div>
 
       <div className="keyServices__exploreBtn">
