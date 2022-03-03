@@ -1,5 +1,5 @@
 .homeHero {
-  padding: 200px 50px !important;
+  padding: 200px 95px !important;
   background: linear-gradient(
     0deg,
     rgba(27, 46, 84, 0.24),
@@ -31,4 +31,18 @@
   display: flex;
   gap: 24px;
   margin-top: 16px;
+}
+
+@media screen and (max-width: 900px) {
+  .homeHero {
+    padding: 80px 55px !important;
+    /* background-position: center; */
+  }
+
+  .homeHero__content {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+  }
 }
