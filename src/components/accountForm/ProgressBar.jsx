@@ -1,12 +1,11 @@
-import React, { useState } from "react";
-import "./ProgressBar.css";
-
+import React from "react";
 import Box from "@mui/material/Box";
 import Stepper from "@mui/material/Stepper";
 import Step from "@mui/material/Step";
 import StepLabel from "@mui/material/StepLabel";
 import routeParams from "../../routeParams";
 import { Link, useLocation } from "react-router-dom";
+import "./ProgressBar.css";
 
 const steps = [
   { label: "Bank Account Validation", page: routeParams.bankInfo },
@@ -38,12 +37,12 @@ function ProgressBar({}) {
   }
 
   return (
-    <Box className="progressBar" sx={{ maxWidth: 400 }}>
+    <Box className="progressBar">
       <Stepper activeStep={getActiveStep() - 1} orientation="vertical">
         {steps.map((step, index) => (
           <Step key={index}>
             <Link to={step.page}>
-              <StepLabel style={{ cursor: "pointer" }}>{step.label}</StepLabel>
+              <StepLabel className="stepLabel">{step.label}</StepLabel>
             </Link>
           </Step>
         ))}
