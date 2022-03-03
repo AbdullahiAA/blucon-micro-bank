@@ -5,6 +5,14 @@ import coreTwoImg from "../../images/coreTwo.png";
 import coreThreeImg from "../../images/coreThree.png";
 import "./CoreValue.css";
 
+const valueList = [
+  "Humility",
+  "Ceativity",
+  "Integrity",
+  "Professionalism",
+  "Resopnsiveness",
+];
+
 function CoreValue() {
   return (
     <div className="coreValue">
@@ -17,43 +25,23 @@ function CoreValue() {
 
         <div className="coreValue__list">
           <ul>
-            <li>
-              <div className="coreValue__listCheck">
-                <img src={checkIcon} alt="Check" />
-              </div>
-              <span>Humility</span>
-            </li>
-            <li>
-              <div className="coreValue__listCheck">
-                <img src={checkIcon} alt="Check" />
-              </div>
-              <span>Ceativity</span>
-            </li>
-            <li>
-              <div className="coreValue__listCheck">
-                <img src={checkIcon} alt="Check" />
-              </div>
-              <span>Integrity</span>
-            </li>
-            <li>
-              <div className="coreValue__listCheck">
-                <img src={checkIcon} alt="Check" />
-              </div>
-              <span>Professionalism</span>
-            </li>
-            <li>
-              <div className="coreValue__listCheck">
-                <img src={checkIcon} alt="Check" />
-              </div>
-              <span>Resopnsiveness</span>
-            </li>
+            {valueList.map((value) => (
+              <li key={value}>
+                <div className="coreValue__listCheck">
+                  <img src={checkIcon} alt="Check" />
+                </div>
+                <span>{value}</span>
+              </li>
+            ))}
           </ul>
         </div>
       </div>
+
       <div className="coreValue__imgMiddle">
         <img src={coreOneImg} alt="Core Value" />
         <img src={coreTwoImg} alt="Core Value" />
       </div>
+
       <div className="coreValue__imgLast">
         <img src={coreThreeImg} alt="Core Value" />
       </div>
