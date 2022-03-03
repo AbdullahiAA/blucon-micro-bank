@@ -20,7 +20,7 @@
 .ourCustomer__content {
   display: flex;
   align-items: center;
-  gap: 100px;
+  gap: 150px;
   margin-top: 100px;
 }
 
@@ -30,6 +30,11 @@
   column-gap: 80px;
   row-gap: 50px;
   align-items: center;
+}
+
+.ourCustomer__images img {
+  max-width: 250px;
+  width: 100%;
 }
 
 .ourCustomer__images > div {
@@ -45,25 +50,35 @@
   grid-column: 2/3;
 }
 
-.ourCustomer__imageOne:after {
-  content: url(../../images/tooltip1.png);
+.ourCustomer__images > div::after {
+  content: "";
   position: absolute;
+  background-repeat: no-repeat;
+  background-size: contain;
+  max-height: 120px;
+  max-width: 180px;
+  height: 100%;
+  width: 100%;
+}
+
+.ourCustomer__imageOne::after {
   left: 50%;
   transform: translateX(-50%);
   top: 100%;
+  background-image: url(../../images/tooltip1.png);
 }
-.ourCustomer__imageTwo:after {
-  content: url(../../images/tooltip2.png);
-  position: absolute;
-  left: 50%;
+
+.ourCustomer__imageTwo::after {
+  left: 70%;
   top: 5%;
+  background-image: url(../../images/tooltip2.png);
 }
-.ourCustomer__imageThree:after {
-  content: url(../../images/tooltip3.png);
-  position: absolute;
-  left: 50%;
+
+.ourCustomer__imageThree::after {
+  left: 70%;
   top: 50%;
   transform: translateY(-50%);
+  background-image: url(../../images/tooltip3.png);
 }
 
 .ourCustomer__list ul {
@@ -81,8 +96,59 @@
 
 .ourCustomer__list ul li span {
   font-weight: 500;
+  font-size: 20px;
 }
 
 .ourCustomer__listCheck > img {
   width: 25px;
+}
+
+@media screen and (max-width: 1370px) {
+  .ourCustomer__list ul li span {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .ourCustomer {
+    padding-top: 50px !important;
+    padding-bottom: 100px !important;
+  }
+
+  .ourCustomer__header {
+    width: 90%;
+    gap: 0px;
+  }
+
+  .ourCustomer__content {
+    margin-top: 60px;
+    gap: 80px;
+  }
+
+  .ourCustomer__images {
+    column-gap: 20px;
+    row-gap: 20px;
+  }
+
+  .ourCustomer__images img {
+    max-width: 150px;
+  }
+
+  .ourCustomer__images > div::after {
+    max-height: 100px !important;
+    max-width: 130px !important;
+  }
+
+  .ourCustomer__imageTwo::after,
+  .ourCustomer__imageThree::after {
+    left: 50%;
+  }
+
+  .ourCustomer__list ul li span {
+    font-size: 16px;
+  }
+
+  .ourCustomer__listCheck > img {
+    width: 20px;
+  }
 }
