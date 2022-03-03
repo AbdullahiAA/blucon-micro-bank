@@ -47,6 +47,7 @@
 .footer__socials {
   display: flex;
   gap: 20px;
+  flex-wrap: wrap;
 }
 
 .footer__socials a {
