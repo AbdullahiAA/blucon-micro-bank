@@ -57,13 +57,11 @@ p {
 button,
 .button {
   font-family: "Dosis", sans-serif;
-
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   padding: 10px 20px;
-
   background: var(--brand-primary-color);
   color: #ffffff;
   outline: none;

@@ -16,3 +16,14 @@
   text-align: center;
   width: 75%;
 }
+
+@media screen and (max-width: 900px) {
+  .aboutHero {
+    padding: 65px 55px 80px;
+  }
+
+  .aboutHero__content {
+    width: 100%;
+    gap: 0px;
+  }
+}

@@ -91,4 +91,8 @@
     line-height: 35px;
     margin-bottom: 8px;
   }
+
+  .serviceCard__secContent {
+    margin-top: 40px;
+  }
 }
