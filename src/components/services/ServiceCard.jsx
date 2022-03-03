@@ -13,9 +13,12 @@ function ServiceCard({
 }) {
   return (
     <div
-      className={`serviceCard ${showImgFirst ? "imgFirst" : ""} ${
-        showFullCard ? "fullCard" : ""
-      } ${showBgIllustration ? "bgIllustration" : ""}`}
+      className={`
+        serviceCard 
+        ${showImgFirst ? "imgFirst" : ""} 
+        ${showFullCard ? "fullCard" : ""} 
+        ${showBgIllustration ? "bgIllustration" : ""}
+      `}
     >
       <div className="serviceCard__content">
         <h2>{title}</h2>

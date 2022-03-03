@@ -1,25 +1,24 @@
 .serviceCard {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: 100px;
   align-items: center;
   padding: 20px 95px;
   margin-bottom: 100px;
 }
 
-.serviceCard > * {
-  flex: 1;
-}
-
 .serviceCard.bgIllustration {
   padding-top: 120px;
+  padding-bottom: 100px;
+  margin-bottom: 0px;
   background-image: url(../../images/illustrations/service.svg);
   background-repeat: no-repeat;
   background-size: cover;
-  margin-bottom: 0px;
 }
 
-.serviceCard.imgFirst {
-  flex-direction: row-reverse;
+.serviceCard.imgFirst .serviceCard__img {
+  grid-column: 1/2;
+  grid-row: 1/2;
 }
 
 .serviceCard.fullCard {
@@ -34,8 +33,7 @@
 }
 
 .serviceCard.fullCard .serviceCard__content {
-  padding-left: 95px;
-  padding-right: 95px;
+  padding: 20px 95px;
 }
 
 .serviceCard:last-of-type {
@@ -50,7 +48,47 @@
   margin-top: 60px;
 }
 
+.serviceCard.fullCard .serviceCard__img {
+  height: 100%;
+}
+
 .serviceCard__img img {
   width: 100%;
-  height: 100% !important;
+}
+
+.serviceCard.fullCard .serviceCard__img img {
+  height: 100%;
+}
+
+@media screen and (max-width: 900px) {
+  .serviceCard {
+    gap: 40px;
+    padding: 20px 55px;
+    margin-bottom: 40px;
+  }
+
+  .serviceCard.bgIllustration {
+    padding-top: 60px;
+    padding-bottom: 40px;
+  }
+
+  .serviceCard.fullCard {
+    margin: 20px 0px 60px;
+  }
+
+  .serviceCard.fullCard .serviceCard__content {
+    padding: 30px 55px;
+    padding-right: 30px;
+  }
+
+  .serviceCard.fullCard.imgFirst .serviceCard__content {
+    padding: 30px 55px;
+    padding-left: 30px;
+  }
+
+  .serviceCard__content h2 {
+    font-size: 24px;
+    line-height: 35px;
+    margin-bottom: 8px;
+  }
 }

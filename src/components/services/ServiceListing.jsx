@@ -15,12 +15,7 @@ function ServiceListing() {
     <div className="serviceListing">
       <ServiceCard
         title="Daily Thrift Contribution"
-        content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh nisi vel
-          nullam lacus, velit. Mattis massa odio nisl gravida in phasellus
-          consectetur tortor, nisl. Dui praesent elit quis ut aliquet. Turpis
-          porta tincidunt ut dictumst tortor ut justo, amet, mi. Velit vel fusce
-          neque, diam risus, nibh amet. Quam sagittis lacinia eget urna nisl. Ut
-          nulla orci vel egestas vestibulum cursus massa id."
+        content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh nisi vel nullam lacus, velit. Mattis massa odio nisl gravida in phasellus consectetur tortor, nisl. Dui praesent elit quis ut aliquet. Turpis porta tincidunt ut dictumst tortor ut justo, amet, mi. Velit vel fusce neque, diam risus, nibh amet. Quam sagittis lacinia eget urna nisl. Ut nulla orci vel egestas vestibulum cursus massa id."
         imgURL={serviceThriftImg}
         showBgIllustration
       />
