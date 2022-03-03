@@ -41,7 +41,7 @@ function OurCustomer() {
         <div className="ourCustomer__list">
           <ul>
             {customerCategory.map((category) => (
-              <li>
+              <li key={category}>
                 <div className="ourCustomer__listCheck">
                   <img src={checkIcon} alt="Check" />
                 </div>

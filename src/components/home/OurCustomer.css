@@ -6,6 +6,7 @@
     url(../../images/illustrations/customer2.svg);
   background-repeat: no-repeat;
   background-position: left top, right bottom;
+  background-size: 50%;
 }
 
 .ourCustomer__header {
@@ -97,6 +98,10 @@
 .ourCustomer__list ul li span {
   font-weight: 500;
   font-size: 20px;
+}
+
+.ourCustomer__listCheck {
+  display: flex;
 }
 
 .ourCustomer__listCheck > img {

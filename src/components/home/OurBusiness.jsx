@@ -3,6 +3,15 @@ import "./OurBusiness.css";
 import checkIconWhite from "../../images/icons/checkIconWhite.svg";
 import businessImg from "../../images/businessImg.png";
 
+const businessCategory = [
+  "Microsavings",
+  "Microcredit",
+  "Microinsurance",
+  "Financial Literacy Service",
+  "Entreprenuership Training",
+  "Remittance of Cash Transfer",
+];
+
 function OurBusiness() {
   return (
     <section className="ourBusiness">
@@ -15,42 +24,14 @@ function OurBusiness() {
 
         <div className="ourBusiness__list">
           <ul>
-            <li>
-              <div className="ourBusiness__listCheck">
-                <img src={checkIconWhite} alt="Check" />
-              </div>
-              <span>Microsavings</span>
-            </li>
-            <li>
-              <div className="ourBusiness__listCheck">
-                <img src={checkIconWhite} alt="Check" />
-              </div>
-              <span>Microcredit</span>
-            </li>
-            <li>
-              <div className="ourBusiness__listCheck">
-                <img src={checkIconWhite} alt="Check" />
-              </div>
-              <span>Microinsurance</span>
-            </li>
-            <li>
-              <div className="ourBusiness__listCheck">
-                <img src={checkIconWhite} alt="Check" />
-              </div>
-              <span>Financial Literacy Service</span>
-            </li>
-            <li>
-              <div className="ourBusiness__listCheck">
-                <img src={checkIconWhite} alt="Check" />
-              </div>
-              <span>Entreprenuership Training</span>
-            </li>
-            <li>
-              <div className="ourBusiness__listCheck">
-                <img src={checkIconWhite} alt="Check" />
-              </div>
-              <span>Remittance of Cash Transfer</span>
-            </li>
+            {businessCategory.map((category) => (
+              <li key={category}>
+                <div className="ourBusiness__listCheck">
+                  <img src={checkIconWhite} alt="Check" />
+                </div>
+                <span>{category}</span>
+              </li>
+            ))}
           </ul>
         </div>
       </div>
