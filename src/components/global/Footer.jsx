@@ -12,7 +12,9 @@ function Footer() {
   return (
     <footer className="footer">
       <div className="footer__contact">
-        <img src={logoWhite} alt="Blucon Microfinance Bank" />
+        <div className="footer__contactImg">
+          <img src={logoWhite} alt="Blucon Microfinance Bank" />
+        </div>
 
         <p>2118 Thornridge Cir. Syracuse, Connecticut 35624 - Lagos, Nigeria</p>
 
