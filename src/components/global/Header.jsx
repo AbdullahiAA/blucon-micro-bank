@@ -19,7 +19,7 @@ function Header() {
             <NavLink to={routeParams.homePage}>Home</NavLink>
           </li>
           <li>
-            <NavLink to={routeParams.servicePage}>Service</NavLink>
+            <NavLink to={routeParams.servicePage}>Services</NavLink>
           </li>
           <li>
             <NavLink to={routeParams.aboutPage}>About</NavLink>
@@ -27,7 +27,7 @@ function Header() {
           <li>
             <NavLink to={routeParams.contactPage}>Contact</NavLink>
           </li>
-          <Link to={routeParams.newAccount}>
+          <Link className="header__btn" to={routeParams.newAccount}>
             <button>Open Free Account</button>
           </Link>
         </ul>
