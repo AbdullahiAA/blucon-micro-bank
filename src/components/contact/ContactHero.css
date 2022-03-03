@@ -40,6 +40,30 @@ ul.contactHero__list li a {
   text-decoration: none;
 }
 
-.contactHero__listCheck > img {
-  width: 25px;
+.coreValue__listIcon {
+  display: flex;
+}
+
+.contactHero__bodyImg img {
+  width: 100%;
+}
+
+@media screen and (max-width: 900px) {
+  .contactHero {
+    padding: 60px 55px 80px;
+    gap: 50px;
+  }
+
+  .contactHero__header {
+    gap: 8px;
+    width: 100%;
+  }
+
+  .contactHero__body {
+    gap: 30px;
+  }
+
+  .coreValue__listIcon img {
+    width: 30px;
+  }
 }
