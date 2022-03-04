@@ -49,7 +49,9 @@ function FormStepper() {
         {steps.map((step, index) => (
           <Step key={index}>
             <Link to={step.page}>
-              <StepLabel className="stepLabel">{step.label}</StepLabel>
+              <StepLabel className="stepLabel">
+                {isMobile === false && step.label}
+              </StepLabel>
             </Link>
           </Step>
         ))}

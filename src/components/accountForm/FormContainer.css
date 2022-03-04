@@ -72,4 +72,8 @@
     grid-template-columns: repeat(1, 1fr);
     row-gap: 20px;
   }
+
+  .formBtns button {
+    min-width: auto;
+  }
 }
