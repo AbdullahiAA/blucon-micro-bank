@@ -7,3 +7,9 @@
     padding: 35px 55px;
   }
 }
+
+@media screen and (max-width: 900px) {
+  .home section {
+    padding: 35px 25px;
+  }
+}

@@ -21,3 +21,9 @@
     width: 100%;
   }
 }
+
+@media screen and (max-width: 550px) {
+  .callToAction {
+    padding: 40px 25px !important;
+  }
+}

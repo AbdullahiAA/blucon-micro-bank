@@ -51,3 +51,20 @@
     max-width: 100%;
   }
 }
+
+@media screen and (max-width: 550px) {
+  .ourHistory {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .ourHistory__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 25px;
+  }
+
+  .ourHistory__img {
+    display: none;
+  }
+}

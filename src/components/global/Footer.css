@@ -112,3 +112,33 @@
     gap: 10px;
   }
 }
+
+@media screen and (max-width: 550px) {
+  .footer {
+    padding: 30px 25px;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 30px;
+    text-align: center;
+  }
+
+  .footer__contact {
+    grid-column: initial;
+  }
+
+  .footer__contact p {
+    line-height: normal;
+  }
+
+  .footer h5 {
+    margin-bottom: 4px;
+  }
+
+  .footer ul {
+    gap: 4px;
+  }
+
+  .footer__socials {
+    justify-content: center;
+    margin-top: 10px;
+  }
+}

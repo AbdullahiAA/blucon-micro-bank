@@ -162,3 +162,30 @@
     width: 20px;
   }
 }
+
+@media screen and (max-width: 550px) {
+  .ourCustomer {
+    padding-top: 40px !important;
+    padding-bottom: 50px !important;
+  }
+
+  .ourCustomer__header {
+    width: 100%;
+  }
+
+  .ourCustomer__content {
+    margin-top: 30px;
+    gap: 0px;
+  }
+
+  .ourCustomer__images {
+    display: none;
+  }
+
+  .ourCustomer__list {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

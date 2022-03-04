@@ -100,3 +100,21 @@
     object-fit: fill;
   }
 }
+
+@media screen and (max-width: 550px) {
+  .ourBusiness {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .ourBusiness__content {
+    padding: 40px 25px;
+    text-align: center;
+  }
+
+  .ourBusiness__list {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

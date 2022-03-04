@@ -106,3 +106,35 @@
     margin-top: 40px;
   }
 }
+
+@media screen and (max-width: 550px) {
+  .serviceCard {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    padding: 20px 25px;
+    margin-bottom: 20px;
+  }
+
+  .serviceCard.bgIllustration {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .serviceCard.fullCard {
+    margin: 20px 0px 40px;
+  }
+
+  .serviceCard.fullCard .serviceCard__content,
+  .serviceCard.fullCard.imgFirst .serviceCard__content {
+    padding: 30px 25px;
+  }
+
+  .serviceCard__img {
+    grid-column: initial;
+    grid-row: 1/2;
+  }
+
+  .serviceCard__content {
+    text-align: center;
+  }
+}

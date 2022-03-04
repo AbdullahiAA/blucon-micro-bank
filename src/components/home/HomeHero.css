@@ -36,7 +36,6 @@
 @media screen and (max-width: 900px) {
   .homeHero {
     padding: 80px 55px !important;
-    /* background-position: center; */
   }
 
   .homeHero__content {
@@ -44,5 +43,16 @@
     margin: auto;
     text-align: center;
     align-items: center;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .homeHero {
+    padding: 40px 25px !important;
+    background-position: center;
+  }
+
+  .homeHero__content {
+    width: 100%;
   }
 }

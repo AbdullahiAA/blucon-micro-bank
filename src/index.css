@@ -153,3 +153,31 @@ a {
     min-width: 130px;
   }
 }
+
+@media screen and (max-width: 550px) {
+  h1 {
+    font-size: 30px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  h5 {
+    font-size: 16px;
+  }
+
+  /* p {
+    font-size: 16px;
+  }
+
+  button,
+  .button {
+    font-size: 16px;
+    min-width: 130px;
+  } */
+}
