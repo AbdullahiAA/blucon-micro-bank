@@ -19,6 +19,10 @@
 }
 
 @media screen and (max-width: 550px) {
+  .formStepper {
+    margin-top: 0px;
+  }
+
   .formStepper .MuiStepLabel-label {
     font-size: 12px;
   }
