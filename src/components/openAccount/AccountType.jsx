@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import routeParams from "../../routeParams";
+import Flip from "react-reveal/Flip";
 import "./AccountType.css";
 
 const accountType = [
@@ -51,17 +52,19 @@ function AccountType() {
   return (
     <div className="accountType">
       {accountType.map(({ id, type, descr, isBtnReverse }) => (
-        <div key={id} className="accountType__item">
-          <h5>{type}</h5>
+        <Flip right>
+          <div key={id} className="accountType__item">
+            <h5>{type}</h5>
 
-          <p>{descr}</p>
+            <p>{descr}</p>
 
-          <Link to={routeParams.bankInfo}>
-            <button className={isBtnReverse ? "btnReverse" : ""}>
-              Select Account
-            </button>
-          </Link>
-        </div>
+            <Link to={routeParams.bankInfo}>
+              <button className={isBtnReverse ? "btnReverse" : ""}>
+                Select Account
+              </button>
+            </Link>
+          </div>
+        </Flip>
       ))}
     </div>
   );

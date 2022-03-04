@@ -50,7 +50,7 @@ h5 {
 }
 
 p {
-  font-size: 20px;
+  font-size: 18px;
   line-height: 30px;
 }
 
@@ -111,10 +111,6 @@ a {
 
   h5 {
     font-size: 22px;
-  }
-
-  p {
-    font-size: 18px;
   }
 
   button,

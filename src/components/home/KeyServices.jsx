@@ -8,6 +8,9 @@ import farmIcon from "../../images/icons/farm.svg";
 import financeIcon from "../../images/icons/finance.svg";
 import routeParams from "../../routeParams";
 import { Link } from "react-router-dom";
+import Fade from "react-reveal/Fade";
+import Slide from "react-reveal/Slide";
+import Roll from "react-reveal/Roll";
 
 const keyServices = [
   {
@@ -58,22 +61,32 @@ function KeyServices() {
   return (
     <section className="keyServices">
       <div className="keyServices__header">
-        <h2>Our Key Services</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh nisi vel
-          nullam lacus, velit. Mattis massa odio nisl gravida Lorem
-        </p>
+        <Fade bottom cascade>
+          <h2>Our Key Services</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh nisi
+            vel nullam lacus, velit. Mattis massa odio nisl gravida Lorem
+          </p>
+        </Fade>
       </div>
 
       <div className="keyServices__list">
         {keyServices.map(({ id, icon, title, content }) => (
-          <div key={id} className="keyServices__listItem">
-            <div className="keyServices__listIcon">
-              <img src={icon} alt={title} />
+          <Slide bottom>
+            <div key={id} className="keyServices__listItem">
+              <Roll top>
+                <div className="keyServices__listIcon">
+                  <img src={icon} alt={title} />
+                </div>
+              </Roll>
+              <Slide left>
+                <h5 className="keyServices__listTitle">{title}</h5>
+              </Slide>
+              <Slide top>
+                <p className="keyServices__listContent">{content}</p>
+              </Slide>
             </div>
-            <h5 className="keyServices__listTitle">{title}</h5>
-            <p className="keyServices__listContent">{content}</p>
-          </div>
+          </Slide>
         ))}
       </div>
 

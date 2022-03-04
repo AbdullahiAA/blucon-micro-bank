@@ -1,5 +1,6 @@
 import React from "react";
 import "./ServiceCard.css";
+import Zoom from "react-reveal/Zoom";
 
 function ServiceCard({
   title,
@@ -20,23 +21,25 @@ function ServiceCard({
         ${showBgIllustration ? "bgIllustration" : ""}
       `}
     >
-      <div className="serviceCard__content">
-        <h2>{title}</h2>
+      <Zoom>
+        <div className="serviceCard__content">
+          <h2>{title}</h2>
 
-        <p>{content}</p>
+          <p>{content}</p>
 
-        {secTitle && secContent && (
-          <div className="serviceCard__secContent">
-            <h2>{secTitle}</h2>
+          {secTitle && secContent && (
+            <div className="serviceCard__secContent">
+              <h2>{secTitle}</h2>
 
-            <p>{secContent}</p>
-          </div>
-        )}
-      </div>
+              <p>{secContent}</p>
+            </div>
+          )}
+        </div>
 
-      <div className="serviceCard__img">
-        <img src={imgURL} alt={title} />
-      </div>
+        <div className="serviceCard__img">
+          <img src={imgURL} alt={title} />
+        </div>
+      </Zoom>
     </div>
   );
 }
