@@ -6,7 +6,7 @@ import routeParams from "../../routeParams";
 
 function AccountHeader() {
   return (
-    <div className="accountHeader">
+    <header className="accountHeader">
       <div className="accountHeader__icon">
         <Link to={routeParams.homePage}>
           <img src={logo} alt="Blucon Microfinance Bank" />
@@ -19,7 +19,7 @@ function AccountHeader() {
           Lorem ipsum dolor sit amet,consect et
         </p>
       </div>
-    </div>
+    </header>
   );
 }
 
