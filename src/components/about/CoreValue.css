@@ -43,6 +43,13 @@
   width: 25px;
 }
 
+.coreValue__imgMiddle,
+.coreValue__imgLast,
+.imgMiddle__img {
+  overflow: hidden;
+  border-radius: 10px;
+}
+
 .coreValue__imgMiddle {
   display: flex;
   flex-direction: column;
@@ -53,6 +60,12 @@
 .coreValue__imgMiddle img {
   width: 100%;
   height: 100%;
+  transition: all 0.3s ease-in;
+}
+
+.coreValue__imgLast img:hover,
+.coreValue__imgMiddle img:hover {
+  transform: scale(1.09);
 }
 
 @media screen and (max-width: 900px) {

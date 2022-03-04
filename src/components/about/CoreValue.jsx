@@ -38,8 +38,13 @@ function CoreValue() {
       </div>
 
       <div className="coreValue__imgMiddle">
-        <img src={coreOneImg} alt="Core Value" />
-        <img src={coreTwoImg} alt="Core Value" />
+        <div className="imgMiddle__img">
+          <img src={coreOneImg} alt="Core Value" />
+        </div>
+
+        <div className="imgMiddle__img">
+          <img src={coreTwoImg} alt="Core Value" />
+        </div>
       </div>
 
       <div className="coreValue__imgLast">

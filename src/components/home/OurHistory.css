@@ -8,6 +8,15 @@
 .ourHistory__img img {
   height: 100%;
   width: 100%;
+  transition: all 0.3s ease-in;
+}
+
+.ourHistory__img {
+  overflow: hidden;
+}
+
+.ourHistory__img img:hover {
+  transform: scale(1.09);
 }
 
 .ourHistory__content {

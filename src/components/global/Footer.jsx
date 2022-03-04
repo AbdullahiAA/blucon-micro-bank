@@ -83,16 +83,16 @@ function Footer() {
           </li>
 
           <li className="footer__socials">
-            <a href="https://www.instagram.com">
+            <a className="instagram" href="https://www.instagram.com">
               <InstagramIcon />
             </a>
-            <a href="https://www.youtube.com">
+            <a className="youtube" href="https://www.youtube.com">
               <YouTubeIcon />
             </a>
-            <a href="https://www.linkedin.com">
+            <a className="linkedin" href="https://www.linkedin.com">
               <LinkedInIcon />
             </a>
-            <a href="https://www.facebook.com">
+            <a className="facebook" href="https://www.facebook.com">
               <FacebookIcon />
             </a>
           </li>

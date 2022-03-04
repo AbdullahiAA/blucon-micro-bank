@@ -30,6 +30,11 @@
 
 .header__nav ul li a {
   position: relative;
+  transition: all 0.3s ease-in;
+}
+
+.header__nav ul li a:hover {
+  color: var(--brand-sec-color);
 }
 
 .header__nav ul li a.active {
@@ -41,15 +46,16 @@
   content: "";
   position: absolute;
   left: 50%;
-  transform: scale(0.5);
+  transform: translateX(-50%) scale(0.5);
   bottom: -8px;
   height: 4px;
   width: 50%;
   border-radius: 30px;
-  transition: all 3s ease-in;
+  transition: all 0.3s ease-in;
 }
 
-.header__nav ul li a.active::after {
+.header__nav ul li a.active::after,
+.header__nav ul li a:hover::after {
   background-color: var(--brand-sec-color);
   transform: translateX(-50%) scale(1);
 }
@@ -70,10 +76,13 @@
   }
 
   .header__nav ul {
-    gap: 40px;
+    gap: 20px;
   }
 
-  .header__btn {
-    display: none;
+  .header__btn button {
+    font-size: 14px;
+    padding: 10px;
+    min-width: none;
+    min-height: auto;
   }
 }

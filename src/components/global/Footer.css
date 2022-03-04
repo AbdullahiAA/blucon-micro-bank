@@ -57,12 +57,39 @@
   align-items: center;
   justify-content: center;
   background-color: #ffffff;
+  transition: all 0.3s ease-in;
+}
+
+.footer__socials a.instagram:hover {
+  background: linear-gradient(
+    45deg,
+    #405de6,
+    #5851db,
+    #833ab4,
+    #c13584,
+    #e1306c,
+    #fd1d1d
+  );
+}
+.footer__socials a.youtube:hover {
+  background-color: #c4302b;
+}
+.footer__socials a.linkedin:hover {
+  background-color: #0e76a8;
+}
+.footer__socials a.facebook:hover {
+  background-color: #3b5998;
+}
+
+.footer__socials a:hover * {
+  color: #ffffff;
 }
 
 .footer__socials a * {
   width: 20px;
   height: 20px;
   color: var(--brand-primary-color);
+  transition: all 0.3s ease-in;
 }
 
 @media screen and (max-width: 900px) {

@@ -36,6 +36,11 @@
 .ourCustomer__images img {
   max-width: 250px;
   width: 100%;
+  transition: all 0.3s ease-in;
+}
+
+.ourCustomer__images img:hover {
+  transform: scale(1.09);
 }
 
 .ourCustomer__images > div {
