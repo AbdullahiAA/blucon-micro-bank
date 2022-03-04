@@ -1,19 +1,42 @@
 .accountHeader {
   display: flex;
   align-items: center;
-  gap: 170px;
-  padding: 35px 100px;
+  gap: 150px;
+  padding: 35px 95px;
   position: sticky;
   top: 0;
+  z-index: 1000;
   background-color: #ffffff;
   box-shadow: 0px 12px 20px rgba(102, 102, 102, 0.06);
 }
 
-.accountHeader__info h3 {
-  margin-bottom: 4px;
+.accountHeader__icon {
+  max-width: 250px;
+}
+
+.accountHeader__icon a,
+.accountHeader__icon img {
+  width: 100%;
 }
 
 .accountHeader__info p {
-  font-size: 18px;
   color: #808080;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+@media screen and (max-width: 900px) {
+  .accountHeader {
+    padding: 20px 55px;
+    gap: 50px;
+  }
+
+  .accountHeader__icon {
+    max-width: 180px;
+  }
+
+  .accountHeader__info p {
+    line-height: 16px;
+    font-size: 12px;
+  }
 }
