@@ -6,9 +6,19 @@
   padding: 35px 95px;
   position: sticky;
   top: 0;
+  left: 0;
+  right: 0;
   z-index: 1000;
   background-color: var(--bg-color);
   box-shadow: 0px 12px 20px rgba(102, 102, 102, 0.06);
+  transition: all 3s ease-in-out;
+}
+
+.header.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 .header__menuToggle {
@@ -106,15 +116,6 @@
     cursor: pointer;
   }
 
-  .header__nav.showMenu {
-    background-image: url(../../images/illustrations/service.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    transform: translate(0%, 0%);
-    border-radius: 0px;
-  }
-
   .header__nav {
     display: flex;
     position: fixed;
@@ -126,9 +127,20 @@
 
     align-items: center;
     justify-content: center;
+    opacity: 0;
     border-radius: 0 0 0 1000px;
     transform: translate(100%, -100%);
     transition: all 0.6s ease-in-out;
+  }
+
+  .header__nav.showMenu {
+    background-image: url(../../images/illustrations/service.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    transform: translate(0%, 0%);
+    border-radius: 0px;
+    opacity: 1;
   }
 
   .header__nav ul {

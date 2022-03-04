@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Header.css";
 import logo from "../../images/logo.png";
 import MenuIcon from "@mui/icons-material/Menu";
@@ -8,9 +8,28 @@ import routeParams from "../../routeParams";
 
 function Header() {
   const [showMenu, setShowMenu] = useState(false);
+  const [isFixedToTop, setIsFixedToTop] = useState(false);
+
+  useEffect(() => {
+    function handleScroll() {
+      const scrollPosition = window.scrollY;
+
+      if (scrollPosition > 0) {
+        setIsFixedToTop(true);
+      } else {
+        setIsFixedToTop(false);
+      }
+    }
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  });
 
   return (
-    <header className="header">
+    <header className={`header ${isFixedToTop ? "fixed" : ""}`}>
       <div className="header__icon">
         <Link to={routeParams.homePage}>
           <img src={logo} alt="Blucon Microfinance Bank" />

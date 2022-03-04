@@ -56,4 +56,8 @@
   .homeHero__content {
     width: 100%;
   }
+
+  .homeHero__callToAction {
+    justify-content: center;
+  }
 }

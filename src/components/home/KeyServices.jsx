@@ -72,8 +72,8 @@ function KeyServices() {
 
       <div className="keyServices__list">
         {keyServices.map(({ id, icon, title, content }) => (
-          <Slide bottom>
-            <div key={id} className="keyServices__listItem">
+          <Slide key={id} bottom>
+            <div className="keyServices__listItem">
               <Roll top>
                 <div className="keyServices__listIcon">
                   <img src={icon} alt={title} />

@@ -11,6 +11,7 @@
 
 .callToAction__btn {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 24px;
   margin-top: 16px;
