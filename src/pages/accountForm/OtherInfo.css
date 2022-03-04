@@ -10,6 +10,7 @@
 
 .checkArea input {
   margin-top: 4px;
+  width: auto;
 }
 
 .checkArea label {
