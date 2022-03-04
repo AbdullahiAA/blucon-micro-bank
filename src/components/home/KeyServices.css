@@ -70,6 +70,7 @@
 
   .keyServices__list {
     margin: 55px 0px;
+    grid-template-columns: repeat(2, 1fr);
     column-gap: 40px;
     row-gap: 40px;
   }

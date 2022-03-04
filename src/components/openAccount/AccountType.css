@@ -16,13 +16,16 @@
 
 .accountType__item p {
   margin-bottom: 24px;
-  /* text-align: initial; */
-}
-
-.accountType__item a {
-  text-decoration: none;
 }
 
 .accountType__item button {
   margin: auto;
+}
+
+@media screen and (max-width: 900px) {
+  .accountType {
+    padding: 35px 55px;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 45px;
+  }
 }
