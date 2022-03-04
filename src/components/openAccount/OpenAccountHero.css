@@ -12,3 +12,14 @@
   text-align: center;
   width: 70%;
 }
+
+@media screen and (max-width: 900px) {
+  .openAccountHero {
+    padding: 65px 55px 30px;
+  }
+
+  .openAccountHero__content {
+    width: 100%;
+    gap: 8px;
+  }
+}

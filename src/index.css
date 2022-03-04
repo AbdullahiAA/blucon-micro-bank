@@ -114,10 +114,12 @@ a {
 @media screen and (max-width: 900px) {
   h1 {
     font-size: 34px;
+    line-height: 35px;
   }
 
   h2 {
     font-size: 30px;
+    line-height: 35px;
   }
 
   h3 {
