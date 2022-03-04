@@ -6,6 +6,18 @@ import { FormGroup, FormLabel } from "../../components/global/FormWidgets";
 import routeParams from "../../routeParams";
 import "./BankInfo.css";
 
+function YearList() {
+  const currentYear = new Date().getFullYear();
+
+  const yearList = [];
+
+  for (let year = currentYear; year >= 1920; year--) {
+    yearList.push(<option>{year}</option>);
+  }
+
+  return <>{yearList}</>;
+}
+
 function BankInfo() {
   function handleSubmit(e) {
     e.preventDefault();
@@ -42,19 +54,51 @@ function BankInfo() {
             <FormGroup>
               <FormLabel title="Day of Birth" htmlFor="dob" />
 
-              <input type="date" id="dob" placeholder="Day of Birth" />
+              <select id="dob">
+                <option value="" selected disabled hidden>
+                  Choose day
+                </option>
+                <option>Sunday</option>
+                <option>Monday</option>
+                <option>Tuesday</option>
+                <option>Wednesday</option>
+                <option>Thursday</option>
+                <option>Friday</option>
+                <option>Saturday</option>
+              </select>
             </FormGroup>
 
             <FormGroup>
               <FormLabel title="Month of Birth" htmlFor="mob" />
 
-              <input type="month" id="mob" placeholder="Month of Birth" />
+              <select id="mob">
+                <option value="" selected disabled hidden>
+                  Choose month
+                </option>
+                <option>January</option>
+                <option>February</option>
+                <option>March</option>
+                <option>April</option>
+                <option>May</option>
+                <option>June</option>
+                <option>July</option>
+                <option>August</option>
+                <option>September</option>
+                <option>October</option>
+                <option>November</option>
+                <option>December</option>
+              </select>
             </FormGroup>
 
             <FormGroup>
               <FormLabel title="Year of Birth" htmlFor="yob" />
 
-              <input type="year" id="yob" placeholder="Year of Birth" />
+              <select id="yob">
+                <option value="" selected disabled hidden>
+                  Choose year
+                </option>
+                <YearList />
+              </select>
             </FormGroup>
           </div>
 

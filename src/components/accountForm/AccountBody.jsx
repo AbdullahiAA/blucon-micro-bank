@@ -1,12 +1,12 @@
 import React from "react";
 import "./AccountBody.css";
 import FormContainer from "./FormContainer";
-import ProgressBar from "./ProgressBar";
+import FormStepper from "./FormStepper";
 
 function AccountBody({ formTitle, formDescr, children }) {
   return (
     <div className="accountBody">
-      <ProgressBar />
+      <FormStepper />
 
       <FormContainer formTitle={formTitle} formDescr={formDescr}>
         {children}

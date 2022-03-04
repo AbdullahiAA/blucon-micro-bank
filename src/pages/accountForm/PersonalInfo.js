@@ -33,11 +33,7 @@ function PersonalInfo() {
                 htmlFor="name"
               />
 
-              <input
-                type="text"
-                id="name"
-                placeholder="Your Full Name (Surname First)"
-              />
+              <input type="text" id="name" placeholder="Surname First" />
             </FormGroup>
           </div>
 
@@ -70,13 +66,17 @@ function PersonalInfo() {
             <FormGroup>
               <FormLabel title="Means of Identification" htmlFor="meansOfID" />
 
-              <input type="text" id="meansOfID" placeholder="+234879357890" />
+              <input
+                type="text"
+                id="meansOfID"
+                placeholder="Means of Identification"
+              />
             </FormGroup>
 
             <FormGroup>
               <FormLabel title="ID Number" htmlFor="homePhoneNo" />
 
-              <input type="text" id="homePhoneNo" placeholder="+234879357890" />
+              <input type="text" id="homePhoneNo" placeholder="ID Number" />
             </FormGroup>
           </div>
 
@@ -106,13 +106,13 @@ function PersonalInfo() {
             <FormGroup>
               <FormLabel title="Local Government Area" htmlFor="lga" />
 
-              <input type="text" id="lga" placeholder="Nigerian" />
+              <input type="text" id="lga" placeholder="Local Government Area" />
             </FormGroup>
 
             <FormGroup>
               <FormLabel title="Religion" htmlFor="religion" />
 
-              <input type="text" id="religion" placeholder="Kwara State" />
+              <input type="text" id="religion" placeholder="Religion" />
             </FormGroup>
           </div>
 
@@ -120,13 +120,17 @@ function PersonalInfo() {
             <FormGroup>
               <FormLabel title="Occupation" htmlFor="occupation" />
 
-              <input type="text" id="occupation" placeholder="Nigerian" />
+              <input type="text" id="occupation" placeholder="Occupation" />
             </FormGroup>
 
             <FormGroup>
               <FormLabel title="Marital Status" htmlFor="maritalStatus" />
 
-              <input type="text" id="maritalStatus" placeholder="Kwara State" />
+              <input
+                type="text"
+                id="maritalStatus"
+                placeholder="Marital Status"
+              />
             </FormGroup>
           </div>
 
@@ -139,11 +143,11 @@ function PersonalInfo() {
 
             <FormGroup>
               <FormLabel
-                title="Spouse Full Name (Surname First) "
+                title="Spouse Full Name (Surname First)"
                 htmlFor="spouseName"
               />
 
-              <input type="text" id="spouseName" placeholder="Kwara State" />
+              <input type="text" id="spouseName" placeholder="Surname First" />
             </FormGroup>
           </div>
 
@@ -154,7 +158,7 @@ function PersonalInfo() {
                 htmlFor="spouseMobile"
               />
 
-              <input type="text" id="spouseMobile" placeholder="Nigerian" />
+              <input type="tel" id="spouseMobile" placeholder="+234879357890" />
             </FormGroup>
 
             <FormGroup>
@@ -163,7 +167,11 @@ function PersonalInfo() {
                 htmlFor="spouseHomeNum"
               />
 
-              <input type="text" id="spouseHomeNum" placeholder="Kwara State" />
+              <input
+                type="tel"
+                id="spouseHomeNum"
+                placeholder="+234879357890"
+              />
             </FormGroup>
           </div>
 
@@ -171,7 +179,7 @@ function PersonalInfo() {
             <FormGroup>
               <FormLabel title="Spouse Address" htmlFor="spouseAddr" />
 
-              <input type="text" id="spouseAddr" placeholder="Nigerian" />
+              <input type="text" id="spouseAddr" placeholder="Spouse Address" />
             </FormGroup>
           </div>
 
@@ -179,7 +187,11 @@ function PersonalInfo() {
             <FormGroup>
               <FormLabel title="Residential Type" htmlFor="residentType" />
 
-              <input type="text" id="residentType" placeholder="Nigerian" />
+              <input
+                type="text"
+                id="residentType"
+                placeholder="Residential Type"
+              />
             </FormGroup>
           </div>
 

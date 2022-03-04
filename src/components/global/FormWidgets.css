@@ -7,18 +7,37 @@
 
 .formLabel {
   font-weight: 500;
-  /* font-size: 20px; */
   line-height: 25px;
   width: fit-content;
   cursor: pointer;
+  user-select: none;
 }
 
-input {
+input,
+select {
+  user-select: none;
   background: #ffffff;
   border: 1.5px solid #cccccc;
   border-radius: 4px;
   padding: 16px;
   outline: none;
+  height: 55px;
   font-family: "Dosis", sans-serif;
-  /* font-size: 18px; */
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+@media screen and (max-width: 900px) {
+  .formLabel {
+    font-size: 14px;
+    white-space: nowrap;
+  }
 }

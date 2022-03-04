@@ -28,13 +28,9 @@ function NextOfKin() {
             </FormGroup>
 
             <FormGroup>
-              <FormLabel title="Full Name (Surname First) " htmlFor="name" />
+              <FormLabel title="Full Name (Surname First)" htmlFor="name" />
 
-              <input
-                type="text"
-                id="name"
-                placeholder="Full Name (Surname First)"
-              />
+              <input type="text" id="name" placeholder="Surname First" />
             </FormGroup>
           </div>
 
@@ -42,7 +38,13 @@ function NextOfKin() {
             <FormGroup>
               <FormLabel title="Gender" htmlFor="gender" />
 
-              <input type="text" id="gender" placeholder="Male" />
+              <select id="gender">
+                <option value="" selected hidden disabled>
+                  Choose gender
+                </option>
+                <option>Male</option>
+                <option>Female</option>
+              </select>
             </FormGroup>
 
             <FormGroup>

@@ -1,0 +1,19 @@
+.formStepper {
+  margin-top: 40px;
+}
+
+.formStepper .Mui-completed,
+.formStepper .Mui-active {
+  color: var(--brand-primary-color) !important;
+}
+
+.formStepper .MuiStepLabel-label {
+  font-family: "Dosis", sans-serif;
+  font-size: 18px;
+}
+
+@media screen and (max-width: 900px) {
+  .formStepper .MuiStepLabel-label {
+    font-size: 14px;
+  }
+}

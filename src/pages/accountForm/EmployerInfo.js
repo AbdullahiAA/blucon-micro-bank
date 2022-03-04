@@ -29,15 +29,11 @@ function EmployerInfo() {
 
             <FormGroup>
               <FormLabel
-                title="Employer Full Name (Surname First) "
+                title="Employer Full Name (Surname First)"
                 htmlFor="name"
               />
 
-              <input
-                type="text"
-                id="name"
-                placeholder="Employer Full Name (Surname First)"
-              />
+              <input type="text" id="name" placeholder="Surname First" />
             </FormGroup>
           </div>
 
@@ -56,14 +52,14 @@ function EmployerInfo() {
               <input
                 type="text"
                 id="employerSector"
-                placeholder="+234879357890"
+                placeholder="Employer Sector"
               />
             </FormGroup>
 
             <FormGroup>
               <FormLabel title="Employement Status" htmlFor="status" />
 
-              <input type="text" id="status" placeholder="+234879357890" />
+              <input type="text" id="status" placeholder="Employement Status" />
             </FormGroup>
           </div>
 
@@ -71,7 +67,11 @@ function EmployerInfo() {
             <FormGroup>
               <FormLabel title="Commencement Date" htmlFor="commDate" />
 
-              <input type="date" id="commDate" placeholder="+234879357890" />
+              <input
+                type="date"
+                id="commDate"
+                placeholder="Commencement Date"
+              />
             </FormGroup>
           </div>
 
