@@ -67,6 +67,10 @@
 }
 
 @media screen and (max-width: 550px) {
+  .formContainer {
+    gap: 20px;
+  }
+
   .row-2,
   .row-3 {
     grid-template-columns: repeat(1, 1fr);

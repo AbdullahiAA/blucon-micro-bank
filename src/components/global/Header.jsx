@@ -24,7 +24,7 @@ function Header() {
         {showMenu === false ? <MenuIcon /> : <CloseIcon />}
       </div>
 
-      <nav className={`header__nav ${showMenu ? "showMenu scale-up-tr" : ""}`}>
+      <nav className={`header__nav ${showMenu ? "showMenu" : ""}`}>
         <ul>
           <li>
             <NavLink to={routeParams.homePage}>Home</NavLink>
