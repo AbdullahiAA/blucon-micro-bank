@@ -98,3 +98,27 @@
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
+@media screen and (max-width: 550px) {
+  .coreValue {
+    padding: 40px 25px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .coreValue__content {
+    padding: 0px;
+    text-align: center;
+  }
+
+  .coreValue__list {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .coreValue__imgLast,
+  .coreValue__imgMiddle {
+    display: none;
+  }
+}

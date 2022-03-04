@@ -88,3 +88,14 @@ ul.contactHero__list li:hover .coreValue__listIcon img {
     width: 30px;
   }
 }
+
+@media screen and (max-width: 550px) {
+  .contactHero {
+    padding: 40px 25px 50px;
+    gap: 50px;
+  }
+
+  .contactHero__body {
+    flex-direction: column;
+  }
+}

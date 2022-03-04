@@ -29,3 +29,19 @@
     row-gap: 45px;
   }
 }
+
+@media screen and (max-width: 550px) {
+  .accountType {
+    padding: 35px 25px;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 55px;
+  }
+
+  .accountType__item h5 {
+    margin-bottom: 0px;
+  }
+
+  .accountType__item p {
+    margin-bottom: 8px;
+  }
+}

@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Header.css";
 import logo from "../../images/logo.png";
+import MenuIcon from "@mui/icons-material/Menu";
+import CloseIcon from "@mui/icons-material/Close";
 import { Link, NavLink } from "react-router-dom";
 import routeParams from "../../routeParams";
 
 function Header() {
+  const [showMenu, setShowMenu] = useState(false);
+
   return (
     <header className="header">
       <div className="header__icon">
@@ -13,7 +17,14 @@ function Header() {
         </Link>
       </div>
 
-      <nav className="header__nav">
+      <div
+        className="header__menuToggle"
+        onClick={() => setShowMenu((prevValue) => !prevValue)}
+      >
+        {showMenu === false ? <MenuIcon /> : <CloseIcon />}
+      </div>
+
+      <nav className={`header__nav ${showMenu ? "showMenu" : ""}`}>
         <ul>
           <li>
             <NavLink to={routeParams.homePage}>Home</NavLink>

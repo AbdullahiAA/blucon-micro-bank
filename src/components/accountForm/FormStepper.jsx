@@ -5,6 +5,7 @@ import Step from "@mui/material/Step";
 import StepLabel from "@mui/material/StepLabel";
 import routeParams from "../../routeParams";
 import { Link, useLocation } from "react-router-dom";
+import useDeviceWidth from "../hooks/useDeviceWidth";
 import "./FormStepper.css";
 
 const steps = [
@@ -16,6 +17,8 @@ const steps = [
 ];
 
 function FormStepper() {
+  const deviceWidth = useDeviceWidth();
+  const isMobile = deviceWidth <= 550;
   const { pathname } = useLocation();
 
   function getActiveStep() {
@@ -38,7 +41,11 @@ function FormStepper() {
 
   return (
     <Box className="formStepper">
-      <Stepper activeStep={getActiveStep() - 1} orientation="vertical">
+      <Stepper
+        activeStep={getActiveStep() - 1}
+        orientation={isMobile ? "horizontal" : "vertical"}
+        alternativeLabel={isMobile}
+      >
         {steps.map((step, index) => (
           <Step key={index}>
             <Link to={step.page}>
