@@ -4,15 +4,15 @@ import AccountBody from "../../components/accountForm/AccountBody";
 import AccountHeader from "../../components/accountForm/AccountHeader";
 import { FormGroup, FormLabel } from "../../components/global/FormWidgets";
 import routeParams from "../../routeParams";
-import "./BankAccount.css";
+import "./BankInfo.css";
 
-function BankAccount() {
+function BankInfo() {
   function handleSubmit(e) {
     e.preventDefault();
   }
 
   return (
-    <div className="bankAccount">
+    <div className="bankInfo">
       <AccountHeader />
 
       <AccountBody
@@ -73,4 +73,4 @@ function BankAccount() {
   );
 }
 
-export default BankAccount;
+export default BankInfo;

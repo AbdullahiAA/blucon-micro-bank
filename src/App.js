@@ -3,7 +3,7 @@ import "./App.css";
 import ScrollToTop from "./components/global/ScrollToTop";
 
 import About from "./pages/About";
-import BankAccount from "./pages/accountForm/BankAccount";
+import BankInfo from "./pages/accountForm/BankInfo";
 import EmployerInfo from "./pages/accountForm/EmployerInfo";
 import NextOfKin from "./pages/accountForm/NextOfKin";
 import OtherInfo from "./pages/accountForm/OtherInfo";
@@ -26,7 +26,7 @@ function App() {
           <Route path={routeParams.aboutPage} element={<About />} />
           <Route path={routeParams.contactPage} element={<Contact />} />
           <Route path={routeParams.newAccount} element={<OpenAccount />} />
-          <Route path={routeParams.bankInfo} element={<BankAccount />} />
+          <Route path={routeParams.bankInfo} element={<BankInfo />} />
           <Route path={routeParams.personalInfo} element={<PersonalInfo />} />
           <Route path={routeParams.employerInfo} element={<EmployerInfo />} />
           <Route path={routeParams.nextOfKin} element={<NextOfKin />} />
