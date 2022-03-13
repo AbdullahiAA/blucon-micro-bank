@@ -17,43 +17,41 @@ const keyServices = [
     id: 1,
     icon: contrIcon,
     title: "Daily Thrift Contribution",
-    content:
-      "Lorem ipsum dolor sit amet, consectetur adipis cing elit. Nibh nisi vel nullam lacus, velit. Mattis massa odio nisl gravida in phasellus consectetur tortor, nisl.",
+    content: "Save daily towards a project or an event and accessible anytime.",
   },
   {
     id: 2,
     icon: bankIcon,
     title: "Bank Account",
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipis cing elit. Nibh nisi vel nullam lacus, velit. Mattis massa odio nisl gravida in phasellus consectetur tortor, nisl.",
+      "Operate smarter and simpler business accounts, and have unrestricted access to your funds at any time.",
   },
   {
     id: 3,
     icon: creditIcon,
     title: "Credit Facilities",
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipis cing elit. Nibh nisi vel nullam lacus, velit. Mattis massa odio nisl gravida in phasellus consectetur tortor, nisl.",
+      "Have a safe space to clearly discuss your loan options with a reliable lending partner.",
   },
   {
     id: 4,
     icon: epuipIcon,
     title: "Equipment Microleasing",
-    content:
-      "Lorem ipsum dolor sit amet, consectetur adipis cing elit. Nibh nisi vel nullam lacus, velit. Mattis massa odio nisl gravida in phasellus consectetur tortor, nisl.",
+    content: "Get your hands on the right tools to make your business succeed.",
   },
   {
     id: 5,
     icon: farmIcon,
     title: "Farm Input Loan",
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipis cing elit. Nibh nisi vel nullam lacus, velit. Mattis massa odio nisl gravida in phasellus consectetur tortor, nisl.",
+      "From land to livestock, become empowered by a supportive lending partner and get a customized loan.",
   },
   {
     id: 6,
     icon: financeIcon,
     title: "Tricycle Finance",
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipis cing elit. Nibh nisi vel nullam lacus, velit. Mattis massa odio nisl gravida in phasellus consectetur tortor, nisl.",
+      "Enjoy a close partnership with the Team at Blucon, and selected tricycle dealers/owners.",
   },
 ];
 
@@ -64,8 +62,10 @@ function KeyServices() {
         <Fade bottom cascade>
           <h2>Our Key Services</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh nisi
-            vel nullam lacus, velit. Mattis massa odio nisl gravida Lorem
+            Your goals become our goals the minute you walk into our bank or
+            dial our number. We offer a range of convenient services to support
+            your business, your customers, and even your shareholders. Let’s
+            simplify your business operations together
           </p>
         </Fade>
       </div>

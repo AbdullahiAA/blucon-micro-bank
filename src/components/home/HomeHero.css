@@ -1,5 +1,5 @@
 .homeHero {
-  padding: 200px 95px !important;
+  padding: 100px 95px !important;
   background: linear-gradient(
     0deg,
     rgba(27, 46, 84, 0.24),
@@ -12,7 +12,7 @@
 
 .homeHero__content {
   height: 100%;
-  width: 50%;
+  width: 55%;
   display: flex;
   flex-direction: column;
   gap: 16px;

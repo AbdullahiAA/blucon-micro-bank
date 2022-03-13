@@ -16,9 +16,9 @@ function About() {
 
       <ServiceCard
         title="Our Mission"
-        content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh nisi vel nullam lacus, velit. Mattis massa odio nisl gravida in phasellus consectetur tortor, nisl. Dui praesent elit quis ut aliquet. Turpis porta tincidunt ut dictumst tortor ut justo, amet, mi. Velit vel fusce neque, diam risus, nibh amet. Quam sagittis lacinia eget urna nisl. Ut nulla orci vel egestas vestibulum cursus massa id."
+        content="To set new standard for excellence in value added microfinance and related services through innovative technology and highly skilled professional staff for customer convenience and satisfaction."
         secTitle="Our Vision"
-        secContent="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh nisi vel nullam lacus, velit. Mattis massa odio nisl gravida in phasellus consectetur tortor, nisl. Dui praesent elit quis ut aliquet. Turpis porta tincidunt ut dictumst tortor ut justo, amet, mi. Velit vel fusce neque, diam risus, nibh amet. Quam sagittis lacinia eget urna nisl. Ut nulla orci vel egestas vestibulum cursus massa id."
+        secContent="To emerge as a national benchmark for innovative and commercially viable microfinance solutions to the unbanked for their socio-economic empowerment."
         imgURL={missionVisionImg}
         showImgFirst
         showFullCard

@@ -10,14 +10,17 @@ function HomeHero() {
       <div className="homeHero__content">
         <Zoom>
           <h1>
-            Lorem <span>ipsum dolor</span> sit amet, consectetur adipiscing
-            elit.
+            We are <span>BLUCON Microfinance Bank.</span> But We would love to
+            be called your bank.
           </h1>
 
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim massa
-            amet id neque in ultrices vitae. Accumsan, tincidunt morbi risus
-            donec eu tincidunt a.
+            Every goal in business is to do things better and serve better.
+            Companies grow and thrive by finding ways to improve their
+            operations, products, or services. We’re here to help you improve
+            your business operations and your cash flow. We offer smarter and
+            simpler business accounts, and solutions to give you better access
+            to your funds and more ways to operate your business and save.
           </p>
 
           <div className="homeHero__callToAction">

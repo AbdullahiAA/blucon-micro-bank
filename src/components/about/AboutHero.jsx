@@ -10,18 +10,16 @@ function AboutHero() {
           <h2>About Blucon Microfinance Bank</h2>
 
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh nisi
-            vel nullam lacus, velit. Mattis massa odio nisl gravida in phasellus
-            consectetur tortor, nisl. Dui praesent elit quis ut aliquet. Turpis
-            porta tincidunt ut dictumst tortor ut justo, amet, mi. Velit vel
-            fusce neque, diam risus, nibh amet. Quam sagittis lacinia eget urna
-            nisl. Ut nulla orci vel egestas vestibulum cursus massa id.Lorem
-            ipsum dolor sit amet, consectetur adipiscing elit. Nibh nisi vel
-            nullam lacus, velit. Mattis massa odio nisl gravida in phasellus
-            consectetur tortor, nisl. Dui praesent elit quis ut aliquet. Turpis
-            porta tincidunt ut dictumst tortor ut justo, amet, mi. Velit vel
-            fusce neque, diam risus, nibh amet. Quam sagittis lacinia eget urna
-            nisl. Ut nulla orci vel egestas vestibulum cursus massa id.
+            Blucon is a microfinance bank licenced by the Central Bank of
+            Nigeria (CBN) in 2008 as a fully-operational microfinance Bank. It
+            has its head office in Ilorin, Kwara State.
+          </p>
+
+          <p>
+            Blucon Microfinance Bank is committed to its passion of providing
+            low cost financial services to low income individuals and
+            enterprises across locals in Ilorin, Kwara state by availing them
+            easy and convenient access to affordable loans.
           </p>
         </Zoom>
       </div>

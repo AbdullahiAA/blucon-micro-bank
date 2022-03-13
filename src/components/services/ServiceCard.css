@@ -41,11 +41,21 @@
 }
 
 .serviceCard__content h2 {
-  margin-bottom: 24px;
+  margin-bottom: 10px;
+}
+
+.serviceCard__content ul {
+  padding: 0 0 0 40px;
+  text-align: left;
 }
 
 .serviceCard__secContent {
   margin-top: 60px;
+}
+
+.serviceCard__subSection {
+  margin-top: 20px;
+  text-align: left;
 }
 
 .serviceCard.fullCard .serviceCard__img {
@@ -104,6 +114,10 @@
 
   .serviceCard__secContent {
     margin-top: 40px;
+  }
+
+  .serviceCard__subSection {
+    margin-top: 10px;
   }
 }
 

@@ -11,6 +11,7 @@ function ServiceCard({
   showImgFirst = false,
   showFullCard = false,
   showBgIllustration = false,
+  children,
 }) {
   return (
     <div
@@ -27,7 +28,9 @@ function ServiceCard({
 
           <p>{content}</p>
 
-          {secTitle && secContent && (
+          <>{children}</>
+
+          {(secTitle || secContent) && (
             <div className="serviceCard__secContent">
               <h2>{secTitle}</h2>
 

@@ -43,13 +43,20 @@ h3 {
   line-height: 35px;
 }
 
+h4 {
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 35px;
+}
+
 h5 {
   font-weight: 600;
   font-size: 24px;
   line-height: 30px;
 }
 
-p {
+p,
+li {
   font-size: 18px;
   line-height: 30px;
 }
@@ -109,6 +116,10 @@ a {
     font-size: 26px;
   }
 
+  h4 {
+    font-size: 24px;
+  }
+
   h5 {
     font-size: 22px;
   }
@@ -136,10 +147,15 @@ a {
   }
 
   h5 {
+    font-size: 20px;
+  }
+
+  h5 {
     font-size: 18px;
   }
 
-  p {
+  p,
+  li {
     font-size: 16px;
   }
 
@@ -161,6 +177,10 @@ a {
 
   h3 {
     font-size: 18px;
+  }
+
+  h3 {
+    font-size: 17px;
   }
 
   h5 {
