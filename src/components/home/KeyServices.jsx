@@ -79,12 +79,10 @@ function KeyServices() {
                   <img src={icon} alt={title} />
                 </div>
               </Roll>
-              <Slide left>
-                <h5 className="keyServices__listTitle">{title}</h5>
-              </Slide>
-              <Slide top>
-                <p className="keyServices__listContent">{content}</p>
-              </Slide>
+
+              <h5 className="keyServices__listTitle">{title}</h5>
+
+              <p className="keyServices__listContent">{content}</p>
             </div>
           </Slide>
         ))}

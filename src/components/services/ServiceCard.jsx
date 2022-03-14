@@ -3,6 +3,7 @@ import "./ServiceCard.css";
 import Zoom from "react-reveal/Zoom";
 
 function ServiceCard({
+  className = "",
   title,
   content,
   secTitle,
@@ -20,15 +21,14 @@ function ServiceCard({
         ${showImgFirst ? "imgFirst" : ""} 
         ${showFullCard ? "fullCard" : ""} 
         ${showBgIllustration ? "bgIllustration" : ""}
+        ${className}
       `}
     >
-      <Zoom>
+      {/* {(title || content) && (
         <div className="serviceCard__content">
           <h2>{title}</h2>
 
           <p>{content}</p>
-
-          <>{children}</>
 
           {(secTitle || secContent) && (
             <div className="serviceCard__secContent">
@@ -38,11 +38,17 @@ function ServiceCard({
             </div>
           )}
         </div>
+      )} */}
 
-        <div className="serviceCard__img">
+      <>
+        <Zoom>{children}</Zoom>
+      </>
+
+      <div className="serviceCard__img">
+        <Zoom>
           <img src={imgURL} alt={title} />
-        </div>
-      </Zoom>
+        </Zoom>
+      </div>
     </div>
   );
 }

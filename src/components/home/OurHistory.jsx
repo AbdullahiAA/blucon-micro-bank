@@ -11,7 +11,7 @@ function OurHistory() {
       </div>
 
       <div className="ourHistory__content">
-        <Slide left>
+        <Slide top>
           <h2>Our History</h2>
         </Slide>
 
